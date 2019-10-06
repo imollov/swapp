@@ -27,3 +27,36 @@ exports[`LoginForm Component should match snapshot 1`] = `
   </Row>
 </div>
 `;
+
+exports[`LoginForm Component should match snapshot with error message 1`] = `
+<div>
+  <Row>
+    <span>
+      Invalid credentials!
+    </span>
+  </Row>
+  <Row>
+    <input
+      name="username"
+      onChange={[Function]}
+      type="text"
+      value="demo"
+    />
+  </Row>
+  <Row>
+    <input
+      name="password"
+      onChange={[Function]}
+      type="password"
+      value="qwerty"
+    />
+  </Row>
+  <Row>
+    <button
+      onClick={[Function]}
+    >
+      Login
+    </button>
+  </Row>
+</div>
+`;

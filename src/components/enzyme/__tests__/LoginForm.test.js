@@ -23,6 +23,20 @@ describe('LoginForm Component', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('should match snapshot with error message', () => {
+    const wrapper = shallow(
+      <LoginForm
+        username="demo"
+        password="qwerty"
+        onInputChange={() => {}}
+        onSubmit={() => {}}
+        errorMessage="Invalid credentials!"
+      />,
+    )
+
+    expect(wrapper).toMatchSnapshot()
+  })
+
   it('should propagate input change', () => {
     const onInputChangeMock = jest.fn()
     const wrapper = shallow(

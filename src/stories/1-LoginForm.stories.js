@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { action } from '@storybook/addon-actions'
-import { withKnobs, select } from '@storybook/addon-knobs'
+import { withKnobs, select, text } from '@storybook/addon-knobs'
 
 import LoginForm from '../components/LoginForm'
 import Card from '../components/Card'
@@ -38,6 +38,7 @@ export const Themed = () => {
 export const Behaviour = () => {
   withKnobs()
   const theme = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
+  const errorMessage = text('Error message')
 
   const [state, setState] = useState({
     username: '',
@@ -61,6 +62,7 @@ export const Behaviour = () => {
           password={state.password}
           onInputChange={onInputChange}
           onSubmit={onSubmit}
+          errorMessage={errorMessage}
         />
       </Card>
     </Container>

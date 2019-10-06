@@ -9,9 +9,14 @@ class LoginForm extends Component {
   handleSubmit = () => this.props.onSubmit()
 
   render() {
-    const { username, password, className } = this.props
+    const { username, password, className, errorMessage } = this.props
     return (
       <div className={className}>
+        {errorMessage && (
+          <Row>
+            <span>{errorMessage}</span>
+          </Row>
+        )}
         <Row>
           <input
             type="text"
