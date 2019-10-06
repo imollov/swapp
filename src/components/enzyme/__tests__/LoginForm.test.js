@@ -17,7 +17,7 @@ describe('LoginForm Component', () => {
         password="qwerty"
         onInputChange={() => {}}
         onSubmit={() => {}}
-      />,
+      />
     )
 
     expect(wrapper).toMatchSnapshot()
@@ -31,7 +31,7 @@ describe('LoginForm Component', () => {
         onInputChange={() => {}}
         onSubmit={() => {}}
         errorMessage="Invalid credentials!"
-      />,
+      />
     )
 
     expect(wrapper).toMatchSnapshot()
@@ -45,18 +45,18 @@ describe('LoginForm Component', () => {
         password="qwerty"
         onInputChange={onInputChangeMock}
         onSubmit={() => {}}
-      />,
+      />
     )
 
     expect(onInputChangeMock).not.toHaveBeenCalled()
 
     const usernameInput = wrapper.find('input[name="username"]')
     usernameInput.simulate('change', {
-      target: { name: 'username', value: 'test' },
+      target: { name: 'username', value: 'test' }
     })
 
     expect(onInputChangeMock).toHaveBeenCalledWith({
-      username: 'test',
+      username: 'test'
     })
   })
 
@@ -68,13 +68,13 @@ describe('LoginForm Component', () => {
         password="qwerty"
         onInputChange={() => {}}
         onSubmit={onSubmitMock}
-      />,
+      />
     )
 
     expect(onSubmitMock).not.toHaveBeenCalled()
 
     const submitButton = wrapper.findWhere(
-      el => el.text() === 'Login' && el.type() === 'button',
+      el => el.text() === 'Login' && el.type() === 'button'
     )
     submitButton.simulate('click')
 

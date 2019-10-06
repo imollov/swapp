@@ -8,7 +8,7 @@ import Container from '../components/Container'
 import styles from './LoginForm.module.scss'
 
 export default {
-  title: 'LoginForm',
+  title: 'LoginForm'
 }
 
 export const Raw = () => {
@@ -42,7 +42,7 @@ export const Behaviour = () => {
 
   const [state, setState] = useState({
     username: '',
-    password: '',
+    password: ''
   })
 
   const onInputChange = input => {
