@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Row from './Row'
+// import Row from './Row'
+import { Row } from 'reactstrap'
 
 class LoginForm extends Component {
   handleTextChange = ({ target: { name, value } }) => {
@@ -12,11 +13,7 @@ class LoginForm extends Component {
     const { username, password, className, errorMessage } = this.props
     return (
       <div className={className}>
-        {errorMessage && (
-          <Row>
-            <span>{errorMessage}</span>
-          </Row>
-        )}
+        {errorMessage && <span>{errorMessage}</span>}
         <Row>
           <input
             type="text"

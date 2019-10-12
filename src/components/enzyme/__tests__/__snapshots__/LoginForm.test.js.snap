@@ -2,7 +2,9 @@
 
 exports[`LoginForm Component should match snapshot 1`] = `
 <div>
-  <Row>
+  <Row
+    tag="div"
+  >
     <input
       name="username"
       onChange={[Function]}
@@ -10,7 +12,9 @@ exports[`LoginForm Component should match snapshot 1`] = `
       value="demo"
     />
   </Row>
-  <Row>
+  <Row
+    tag="div"
+  >
     <input
       name="password"
       onChange={[Function]}
@@ -18,7 +22,9 @@ exports[`LoginForm Component should match snapshot 1`] = `
       value="qwerty"
     />
   </Row>
-  <Row>
+  <Row
+    tag="div"
+  >
     <button
       onClick={[Function]}
     >
@@ -30,12 +36,12 @@ exports[`LoginForm Component should match snapshot 1`] = `
 
 exports[`LoginForm Component should match snapshot with error message 1`] = `
 <div>
-  <Row>
-    <span>
-      Invalid credentials!
-    </span>
-  </Row>
-  <Row>
+  <span>
+    Invalid credentials!
+  </span>
+  <Row
+    tag="div"
+  >
     <input
       name="username"
       onChange={[Function]}
@@ -43,7 +49,9 @@ exports[`LoginForm Component should match snapshot with error message 1`] = `
       value="demo"
     />
   </Row>
-  <Row>
+  <Row
+    tag="div"
+  >
     <input
       name="password"
       onChange={[Function]}
@@ -51,7 +59,9 @@ exports[`LoginForm Component should match snapshot with error message 1`] = `
       value="qwerty"
     />
   </Row>
-  <Row>
+  <Row
+    tag="div"
+  >
     <button
       onClick={[Function]}
     >

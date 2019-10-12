@@ -3,8 +3,7 @@ import { action } from '@storybook/addon-actions'
 import { withKnobs, select, text } from '@storybook/addon-knobs'
 
 import LoginForm from '../components/LoginForm'
-import Card from '../components/Card'
-import Container from '../components/Container'
+import { Container, Card } from 'reactstrap'
 import styles from './LoginForm.module.scss'
 
 export default {
@@ -27,9 +26,9 @@ export const Themed = () => {
   withKnobs()
   const theme = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
   return (
-    <Container className={styles[theme]}>
+    <Container className={[styles.container, styles[theme]]}>
       <Card className={styles.card}>
-        <LoginForm />
+        <LoginForm className={styles.form} />
       </Card>
     </Container>
   )
@@ -55,9 +54,10 @@ export const Behaviour = () => {
   }
 
   return (
-    <Container className={styles[theme]}>
+    <Container className={[styles.container, styles[theme]]}>
       <Card className={styles.card}>
         <LoginForm
+          className={styles.form}
           username={state.username}
           password={state.password}
           onInputChange={onInputChange}
