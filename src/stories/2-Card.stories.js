@@ -1,10 +1,10 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, select } from '@storybook/addon-knobs'
-import styles from './Card.module.scss'
 
 import Card from '../components/Card'
 import { Container, Row } from 'reactstrap'
+import styles from './Card.module.scss'
 
 export default {
   title: 'Card'

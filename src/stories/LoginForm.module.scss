@@ -37,11 +37,13 @@
   }
 
   button {
-    margin-left: auto;
-    font-size: 20px;
-    font-weight: 800;
+    font-family: 'starwars';
+    font-size: 22px;
+    letter-spacing: 1.5px;
     border-radius: 4px;
-    padding: 8px 20px;
+    padding: 10px 18px;
+    margin-left: auto;
+    cursor: pointer;
 
     &:active,
     &:focus {
