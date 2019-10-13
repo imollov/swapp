@@ -26,7 +26,7 @@ export const Themed = () => {
   withKnobs()
   const theme = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
   return (
-    <Container className={[styles.container, styles[theme]]}>
+    <Container className={`${styles.container} ${styles[theme]}`}>
       <Card className={styles.card}>
         <LoginForm className={styles.form} />
       </Card>
@@ -54,7 +54,7 @@ export const Behaviour = () => {
   }
 
   return (
-    <Container className={[styles.container, styles[theme]]}>
+    <Container className={`${styles.container} ${styles[theme]}`}>
       <Card className={styles.card}>
         <LoginForm
           className={styles.form}

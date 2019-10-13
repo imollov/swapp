@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import Row from './Row'
 import { Row } from 'reactstrap'
 
 class LoginForm extends Component {
