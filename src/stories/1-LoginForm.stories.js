@@ -3,7 +3,6 @@ import { action } from '@storybook/addon-actions'
 import { withKnobs, select, text } from '@storybook/addon-knobs'
 
 import LoginForm from '../components/LoginForm'
-import { Container, Card } from 'reactstrap'
 import styles from './LoginForm.module.scss'
 
 export default {
@@ -16,9 +15,9 @@ export const Raw = () => {
 
 export const Pretty = () => {
   return (
-    <Card className={styles.card}>
+    <div className={styles.card}>
       <LoginForm username="demo" password="password" />
-    </Card>
+    </div>
   )
 }
 
@@ -26,11 +25,11 @@ export const Themed = () => {
   withKnobs()
   const theme = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
   return (
-    <Container className={`${styles.container} ${styles[theme]}`}>
-      <Card className={styles.card}>
+    <div className={`${styles.container} ${styles[theme]}`}>
+      <div className={styles.card}>
         <LoginForm className={styles.form} />
-      </Card>
-    </Container>
+      </div>
+    </div>
   )
 }
 
@@ -54,8 +53,8 @@ export const Behaviour = () => {
   }
 
   return (
-    <Container className={`${styles.container} ${styles[theme]}`}>
-      <Card className={styles.card}>
+    <div className={`${styles.container} ${styles[theme]}`}>
+      <div className={styles.card}>
         <LoginForm
           className={styles.form}
           username={state.username}
@@ -64,7 +63,7 @@ export const Behaviour = () => {
           onSubmit={onSubmit}
           errorMessage={errorMessage}
         />
-      </Card>
-    </Container>
+      </div>
+    </div>
   )
 }
