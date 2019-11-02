@@ -25,6 +25,7 @@ const themes = {
     buttonBackground: '#000',
     buttonText: '#FFE300',
     borderColor: '#E5E9F2',
+    subTitleColor: '#4E5B6E',
     modes: {
       dark: {
         primary: '#FFE300',
@@ -35,6 +36,7 @@ const themes = {
         buttonBackground: '#4BD5EE',
         buttonText: '#FFE300',
         borderColor: '#3C4858',
+        subTitleColor: '#4BD5EE',
       },
     },
   },
@@ -105,11 +107,16 @@ const themes = {
       lineHeight: 'heading',
       fontWeight: 'heading',
       letterSpacing: 'heading',
-      py: 3,
     },
     title: {
       variant: 'text.heading',
       fontSize: 3,
+      py: 3,
+    },
+    subtitle: {
+      fontSize: 3,
+      color: 'subTitleColor',
+      py: 0,
     },
   },
 }
