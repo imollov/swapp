@@ -1,34 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card Component should match snapshot 1`] = `
-<Card
-  className="card class"
-  tag="div"
->
-  <CardImg
-    onClick={[Function]}
-    src="img.png"
-    tag="img"
-  />
-  <CardBody
-    tag="div"
-  >
-    <CardTitle
-      onClick={[Function]}
-      tag="div"
-    >
-      Title
-    </CardTitle>
-    <CardSubtitle
-      tag="div"
-    >
-      Subtitle
-    </CardSubtitle>
-    <CardText
-      tag="p"
-    >
-      Text
-    </CardText>
-  </CardBody>
-</Card>
+<div
+  className="card vertical undefined class"
+/>
 `;

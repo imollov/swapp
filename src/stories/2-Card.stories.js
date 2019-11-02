@@ -1,9 +1,13 @@
 import React from 'react'
-import { action } from '@storybook/addon-actions'
 import { withKnobs, select } from '@storybook/addon-knobs'
 
+import Container from '../components/Container'
 import Card from '../components/Card'
-import { Container, Row } from 'reactstrap'
+import CardImage from '../components/CardImage'
+import CardTitle from '../components/CardTitle'
+import CardText from '../components/CardText'
+import CardBody from '../components/CardBody'
+
 import styles from './Card.module.scss'
 
 export default {
@@ -18,35 +22,37 @@ const desc =
 const img =
   'https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg'
 
-export const Themed = () => {
+export const Horizontal = () => {
   withKnobs()
   const theme = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
   return (
-    <Container className={`${styles[theme]} ${styles.container}`}>
-      <Row>
-        <Card title={title} text={desc} img={img} className={styles.card} />
-      </Row>
+    <Container className={styles.container} theme={theme}>
+      <div className={styles.cardVertical}>
+        <Card theme={theme}>
+          <CardImage imageSrc={img} />
+          <CardBody>
+            <CardTitle text={title} theme={theme} />
+            <CardText text={desc} theme={theme} />
+          </CardBody>
+        </Card>
+      </div>
     </Container>
   )
 }
 
-export const Behaviour = () => {
+export const Vertical = () => {
   withKnobs()
   const theme = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
-
-  const onClick = e => action('clicked')(e.target.className)
-
   return (
-    <Container className={`${styles[theme]} ${styles.container}`}>
-      <Row>
-        <Card
-          title={title}
-          text={desc}
-          img={img}
-          className={styles.card}
-          onClick={onClick}
-        />
-      </Row>
+    <Container className={styles.container} theme={theme}>
+      <div className={styles.cardHorizontal}>
+        <Card orientation="horizontal" theme={theme}>
+          <CardImage imageSrc={img} stickTo="left" />
+          <CardBody alignItems="center">
+            <CardTitle text={title} size="large" theme={theme} />
+          </CardBody>
+        </Card>
+      </div>
     </Container>
   )
 }

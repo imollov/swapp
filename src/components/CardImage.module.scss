@@ -1,0 +1,15 @@
+.cardImage {
+  width: 100%;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  cursor: pointer;
+  flex: 1;
+}
+
+.top {
+  border-radius: 10px 10px 0 0;
+}
+
+.left {
+  border-radius: 10px 0 0 10px;
+}
