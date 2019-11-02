@@ -1,13 +1,36 @@
 import { createGlobalStyle } from 'styled-components'
 import starwars from './fonts/starwars.ttf'
 
-export const theme = {
+const getTheme = theme => mode => {
+  const {
+    colors,
+    colors: { modes },
+    initialColorMode,
+  } = theme
+  return {
+    ...theme,
+    colors:
+      mode === initialColorMode ? { ...colors } : { ...colors, ...modes[mode] },
+  }
+}
+
+const themes = {
+  initialColorMode: 'light',
   colors: {
-    text: '#abb1ba',
-    background: '#000',
     primary: '#FFE300',
     secondary: '#4BD5EE',
-    gray: '#333',
+    text: '#4E5B6E',
+    background: '#E8EAED',
+    muted: '#FFF',
+    buttonBackground: '#000',
+    modes: {
+      dark: {
+        text: '#abb1ba',
+        background: '#000',
+        muted: '#333',
+        buttonBackground: '#4BD5EE',
+      },
+    },
   },
   fonts: {
     body: 'Helvetica',
@@ -36,8 +59,9 @@ export const theme = {
       fontWeight: 'bold',
       letterSpacing: 3,
       color: 'primary',
-      bg: 'secondary',
+      bg: 'buttonBackground',
       borderRadius: 'default',
+      cursor: 'pointer',
       px: 4,
       py: 2,
     },
@@ -48,6 +72,8 @@ export const theme = {
     },
   },
 }
+
+export const theme = getTheme(themes)
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
