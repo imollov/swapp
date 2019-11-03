@@ -5,7 +5,7 @@ export default ({ img, title, text, ...rest }) => (
   <Card {...rest}>
     <Image src={img} width={1} />
     <Box p={3}>
-      <Heading variant="title">{title}</Heading>
+      <Heading variant="h2">{title}</Heading>
       <Text variant="body">{text}</Text>
     </Box>
   </Card>

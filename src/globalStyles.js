@@ -112,22 +112,28 @@ const themes = {
       letterSpacing: 'body',
     },
     heading: {
-      fontSize: 4,
-      color: 'primary',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
       letterSpacing: 'heading',
+      color: 'primary',
+    },
+    h1: {
+      variant: 'text.heading',
+      fontSize: 4,
+    },
+    h2: {
+      variant: 'text.heading',
+      fontSize: 3,
+      py: 3,
+    },
+    h3: {
+      variant: 'text.heading',
+      fontSize: 2,
     },
     sub: {
       fontSize: 3,
       color: 'subHeading',
-      py: 0,
-    },
-    title: {
-      variant: 'text.heading',
-      fontSize: 3,
-      py: 3,
     },
   },
 }

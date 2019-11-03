@@ -4,6 +4,7 @@ import { withKnobs, select } from '@storybook/addon-knobs'
 import EpisodePreview from '../pages/episodes/components/Preview'
 import EpisodeBanner from '../pages/episodes/components/Banner'
 import EpisodeInfo from '../pages/episodes/components/Info'
+import ListItem from '../components/ListItem'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle, { theme } from '../globalStyles'
@@ -51,6 +52,21 @@ export const Info = () => {
   return (
     <ThemeProvider theme={{ ...theme(mode) }}>
       <EpisodeInfo info={info} details={details} width={720} />
+      <GlobalStyle />
+    </ThemeProvider>
+  )
+}
+
+const characterName = 'Han Solo'
+const characterImg =
+  'https://i.pinimg.com/originals/19/37/95/19379598fbb4338dd02e7ea8dde3ad63.jpg'
+
+export const List = () => {
+  withKnobs()
+  const mode = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
+  return (
+    <ThemeProvider theme={{ ...theme(mode) }}>
+      <ListItem img={characterImg} title={characterName} width={256} />
       <GlobalStyle />
     </ThemeProvider>
   )
