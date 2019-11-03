@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Box, Text } from 'rebass/styled-components'
+import Details from '../../../components/Details'
 
 export default ({ info, details, ...rest }) => (
   <Card {...rest} variant="card">
@@ -7,14 +8,7 @@ export default ({ info, details, ...rest }) => (
       <Text variant="body" pb={2}>
         {info}
       </Text>
-      {details.map(([label, value]) => (
-        <Box pb={1}>
-          <Text variant="body" color="detailLabel" as="a">{`${label}: `}</Text>
-          <Text variant="body" color="detailValue" as="a">
-            {value}
-          </Text>
-        </Box>
-      ))}
+      <Details data={details} />
     </Box>
   </Card>
 )
