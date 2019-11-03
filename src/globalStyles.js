@@ -35,6 +35,8 @@ const themes = {
     subHeading: '#4E5B6E',
     detailLabel: '#4E5B6E',
     detailValue: palette.lightBlue,
+    appBar: palette.black,
+    link: palette.lightBlue,
     modes: {
       dark: {
         primary: palette.yellow,
@@ -43,11 +45,11 @@ const themes = {
         background: palette.black,
         muted: '#333',
         buttonBg: palette.lightBlue,
-        buttonText: palette.yellow,
         borderColor: '#3C4858',
         subHeading: palette.lightBlue,
         detailLabel: palette.lightBlue,
         detailValue: palette.yellow,
+        appBar: '#333',
       },
     },
   },
@@ -135,6 +137,17 @@ const themes = {
     sub: {
       fontSize: 3,
       color: 'subHeading',
+    },
+    logo: {
+      small: {
+        variant: 'text.heading',
+        fontSize: 4,
+      },
+    },
+    link: {
+      variant: 'text.body',
+      color: 'link',
+      cursor: 'pointer',
     },
   },
 }
