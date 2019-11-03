@@ -26,6 +26,8 @@ const themes = {
     buttonText: '#FFE300',
     borderColor: '#E5E9F2',
     subTitleColor: '#4E5B6E',
+    detailLabel: '#4E5B6E',
+    detailValue: '#4BD5EE',
     modes: {
       dark: {
         primary: '#FFE300',
@@ -37,6 +39,8 @@ const themes = {
         buttonText: '#FFE300',
         borderColor: '#3C4858',
         subTitleColor: '#4BD5EE',
+        detailLabel: '#4BD5EE',
+        detailValue: '#FFE300',
       },
     },
   },
