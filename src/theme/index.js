@@ -98,7 +98,7 @@ export default {
       pb: '6',
     },
     fitContent: {
-      variant: 'variants.container',
+      variant: 'variants.content',
       width: '740px',
     },
   },
