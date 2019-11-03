@@ -6,6 +6,8 @@ import EpisodeBanner from '../pages/episodes/components/Banner'
 import EpisodeInfo from '../pages/episodes/components/Info'
 import ImageCard from '../components/ImageCard'
 import ResponsiveList from '../components/ResponsiveList'
+import InfoCard from '../components/InfoCard'
+
 import { Box } from 'rebass/styled-components'
 
 import { ThemeProvider } from 'styled-components'
@@ -62,6 +64,12 @@ export const Info = () => {
 const characterName = 'Han Solo'
 const characterImg =
   'https://i.pinimg.com/originals/19/37/95/19379598fbb4338dd02e7ea8dde3ad63.jpg'
+const characterDetails = [
+  ['Weight', '80'],
+  ['Height', '180'],
+  ['Home world', 'Corellia'],
+  ['Species', 'Human'],
+]
 
 const starshipName = 'Millennium Falcon'
 const starshipImg =
@@ -74,6 +82,23 @@ const Container = ({ maxWidth, children, ...rest }) => (
     </Box>
   </Box>
 )
+
+export const InfoWithImage = () => {
+  withKnobs()
+  const mode = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
+  return (
+    <ThemeProvider theme={{ ...theme(mode) }}>
+      <Container maxWidth={470}>
+        <InfoCard
+          title={characterName}
+          img={characterImg}
+          data={characterDetails}
+        />
+      </Container>
+      <GlobalStyle />
+    </ThemeProvider>
+  )
+}
 
 export const List3Columns = () => {
   withKnobs()
