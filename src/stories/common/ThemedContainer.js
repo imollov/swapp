@@ -11,8 +11,10 @@ export default ({ children, ...rest }) => {
   return (
     <ThemeProvider theme={{ ...theme(mode) }}>
       <Box bg="background">
-        <Box {...rest} p={5} mx="auto">
-          {children}
+        <Box variant="content">
+          <Box {...rest} mx="auto">
+            {children}
+          </Box>
         </Box>
       </Box>
       <GlobalStyle />

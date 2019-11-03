@@ -35,6 +35,8 @@ const themes = {
     subHeading: '#4E5B6E',
     detailLabel: '#4E5B6E',
     detailValue: palette.lightBlue,
+    appBar: palette.black,
+    link: palette.lightBlue,
     modes: {
       dark: {
         primary: palette.yellow,
@@ -43,11 +45,11 @@ const themes = {
         background: palette.black,
         muted: '#333',
         buttonBg: palette.lightBlue,
-        buttonText: palette.yellow,
         borderColor: '#3C4858',
         subHeading: palette.lightBlue,
         detailLabel: palette.lightBlue,
         detailValue: palette.yellow,
+        appBar: '#333',
       },
     },
   },
@@ -71,7 +73,7 @@ const themes = {
     heading: 1.2,
     button: 2,
   },
-  space: [0, 4, 8, 16, 32, 64, 128],
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
   radii: {
     default: 8,
     circle: 99999,
@@ -104,6 +106,17 @@ const themes = {
       borderColor: 'borderColor',
       overflow: 'hidden',
     },
+    content: {
+      width: '970px',
+      bg: 'background',
+      mx: 'auto',
+      pt: '5',
+      pb: '6',
+    },
+    fitContent: {
+      variant: 'variants.container',
+      width: '740px',
+    },
   },
   text: {
     body: {
@@ -135,6 +148,17 @@ const themes = {
     sub: {
       fontSize: 3,
       color: 'subHeading',
+    },
+    logo: {
+      small: {
+        variant: 'text.heading',
+        fontSize: 4,
+      },
+    },
+    link: {
+      variant: 'text.body',
+      color: 'link',
+      cursor: 'pointer',
     },
   },
 }
