@@ -68,7 +68,7 @@ const themes = {
   },
   letterSpacings: {
     body: 0.1,
-    heading: 1,
+    heading: 1.2,
     button: 2,
   },
   space: [0, 4, 8, 16, 32, 64, 128],
