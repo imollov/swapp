@@ -14,33 +14,40 @@ const getTheme = theme => mode => {
   }
 }
 
+const palette = {
+  yellow: '#FFE300',
+  lightBlue: '#4BD5EE',
+  black: '#000',
+  white: '#fff',
+}
+
 const themes = {
   initialColorMode: 'light',
   colors: {
-    primary: '#4BD5EE',
-    secondary: '#FFE300',
+    primary: palette.lightBlue,
+    secondary: palette.yellow,
     text: '#4E5B6E',
     background: '#E8EAED',
-    muted: '#FFF',
-    buttonBackground: '#000',
-    buttonText: '#FFE300',
+    muted: palette.white,
+    buttonBg: palette.black,
+    buttonText: palette.yellow,
     borderColor: '#E5E9F2',
-    subTitleColor: '#4E5B6E',
+    subHeading: '#4E5B6E',
     detailLabel: '#4E5B6E',
-    detailValue: '#4BD5EE',
+    detailValue: palette.lightBlue,
     modes: {
       dark: {
-        primary: '#FFE300',
-        secondary: '#4BD5EE',
+        primary: palette.yellow,
+        secondary: palette.lightBlue,
         text: '#abb1ba',
-        background: '#000',
+        background: palette.black,
         muted: '#333',
-        buttonBackground: '#4BD5EE',
-        buttonText: '#FFE300',
+        buttonBg: palette.lightBlue,
+        buttonText: palette.yellow,
         borderColor: '#3C4858',
-        subTitleColor: '#4BD5EE',
-        detailLabel: '#4BD5EE',
-        detailValue: '#FFE300',
+        subHeading: palette.lightBlue,
+        detailLabel: palette.lightBlue,
+        detailValue: palette.yellow,
       },
     },
   },
@@ -76,7 +83,7 @@ const themes = {
       fontWeight: 'bold',
       letterSpacing: 'button',
       color: 'buttonText',
-      bg: 'buttonBackground',
+      bg: 'buttonBg',
       borderRadius: 'default',
       cursor: 'pointer',
       px: 4,
@@ -112,15 +119,15 @@ const themes = {
       fontWeight: 'heading',
       letterSpacing: 'heading',
     },
+    sub: {
+      fontSize: 3,
+      color: 'subHeading',
+      py: 0,
+    },
     title: {
       variant: 'text.heading',
       fontSize: 3,
       py: 3,
-    },
-    subtitle: {
-      fontSize: 3,
-      color: 'subTitleColor',
-      py: 0,
     },
   },
 }
