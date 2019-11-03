@@ -7,7 +7,7 @@ import Logout from './Logout'
 export default props => {
   return (
     <Flex {...props} bg="appBar" height={60}>
-      <Box width={1 / 2} flexDirection="column" pl={4} alignSelf="center">
+      <Box width={1 / 2} pl={4} alignSelf="center">
         <Logo variant="logo.small" />
       </Box>
       <Flex width={1 / 2} justifyContent="flex-end" alignSelf="center">
