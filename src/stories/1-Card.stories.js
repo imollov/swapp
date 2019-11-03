@@ -23,8 +23,8 @@ const img =
 
 export const Preview = () => {
   return (
-    <ThemedContainer width={470}>
-      <EpisodePreview title={title} text={desc} img={img} width={256} />
+    <ThemedContainer width={256}>
+      <EpisodePreview title={title} text={desc} img={img} />
     </ThemedContainer>
   )
 }

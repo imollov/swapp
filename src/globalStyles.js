@@ -73,7 +73,7 @@ const themes = {
     heading: 1.2,
     button: 2,
   },
-  space: [0, 4, 8, 16, 32, 64, 128],
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
   radii: {
     default: 8,
     circle: 99999,
@@ -105,6 +105,17 @@ const themes = {
       borderRadius: 'default',
       borderColor: 'borderColor',
       overflow: 'hidden',
+    },
+    content: {
+      width: '970px',
+      bg: 'background',
+      mx: 'auto',
+      pt: '5',
+      pb: '6',
+    },
+    fitContent: {
+      variant: 'variants.container',
+      width: '740px',
     },
   },
   text: {
