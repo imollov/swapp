@@ -14,21 +14,40 @@ const getTheme = theme => mode => {
   }
 }
 
+const palette = {
+  yellow: '#FFE300',
+  lightBlue: '#4BD5EE',
+  black: '#000',
+  white: '#fff',
+}
+
 const themes = {
   initialColorMode: 'light',
   colors: {
-    primary: '#FFE300',
-    secondary: '#4BD5EE',
+    primary: palette.lightBlue,
+    secondary: palette.yellow,
     text: '#4E5B6E',
     background: '#E8EAED',
-    muted: '#FFF',
-    buttonBackground: '#000',
+    muted: palette.white,
+    buttonBg: palette.black,
+    buttonText: palette.yellow,
+    borderColor: '#E5E9F2',
+    subHeading: '#4E5B6E',
+    detailLabel: '#4E5B6E',
+    detailValue: palette.lightBlue,
     modes: {
       dark: {
+        primary: palette.yellow,
+        secondary: palette.lightBlue,
         text: '#abb1ba',
-        background: '#000',
+        background: palette.black,
         muted: '#333',
-        buttonBackground: '#4BD5EE',
+        buttonBg: palette.lightBlue,
+        buttonText: palette.yellow,
+        borderColor: '#3C4858',
+        subHeading: palette.lightBlue,
+        detailLabel: palette.lightBlue,
+        detailValue: palette.yellow,
       },
     },
   },
@@ -37,29 +56,34 @@ const themes = {
     heading: 'starwars',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [14, 16, 20, 24],
+  fontSizes: [16, 18, 22, 26, 32],
   fontWeights: {
     body: 400,
-    heading: 700,
+    heading: 800,
     bold: 700,
   },
   lineHeights: {
-    body: 1.5,
-    heading: 1.25,
+    heading: 1,
+    body: 1.2,
+  },
+  letterSpacings: {
+    body: 0.1,
+    heading: 1.2,
+    button: 2,
   },
   space: [0, 4, 8, 16, 32, 64, 128],
   radii: {
-    default: 4,
+    default: 8,
     circle: 99999,
   },
   buttons: {
     primary: {
-      fontSize: 3,
+      fontSize: 2,
       fontFamily: 'heading',
       fontWeight: 'bold',
-      letterSpacing: 3,
-      color: 'primary',
-      bg: 'buttonBackground',
+      letterSpacing: 'button',
+      color: 'buttonText',
+      bg: 'buttonBg',
       borderRadius: 'default',
       cursor: 'pointer',
       px: 4,
@@ -67,8 +91,50 @@ const themes = {
     },
     secondary: {
       variant: 'buttons.primary',
-      fontSize: 2,
+      fontSize: 1,
       px: 3,
+    },
+  },
+  variants: {
+    card: {
+      bg: 'muted',
+      color: 'text',
+      border: '1px solid',
+      borderRadius: 'default',
+      borderColor: 'borderColor',
+      overflow: 'hidden',
+    },
+  },
+  text: {
+    body: {
+      fontSize: 0,
+      fontFamily: 'body',
+      lineHeight: 'body',
+      letterSpacing: 'body',
+    },
+    heading: {
+      fontFamily: 'heading',
+      lineHeight: 'heading',
+      fontWeight: 'heading',
+      letterSpacing: 'heading',
+      color: 'primary',
+    },
+    h1: {
+      variant: 'text.heading',
+      fontSize: 4,
+    },
+    h2: {
+      variant: 'text.heading',
+      fontSize: 3,
+      py: 3,
+    },
+    h3: {
+      variant: 'text.heading',
+      fontSize: 1,
+    },
+    sub: {
+      fontSize: 3,
+      color: 'subHeading',
     },
   },
 }
