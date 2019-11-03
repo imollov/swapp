@@ -1348,6 +1348,13 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@rebass/layout@^4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@rebass/layout/-/layout-4.0.6.tgz#5a744775b40698bc539c956001fda874f5e0cee7"
+  integrity sha512-C/PwG30FnP/vFWe6Qrbkv0zLGeXMSE3MwYFOdWlIQ1GuPtFza0aXYfCwBa9lxOYtCeq464QxX1mCg8dnhWXz9Q==
+  dependencies:
+    reflexbox "^4.0.6"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"

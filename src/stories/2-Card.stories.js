@@ -4,7 +4,9 @@ import { withKnobs, select } from '@storybook/addon-knobs'
 import EpisodePreview from '../pages/episodes/components/Preview'
 import EpisodeBanner from '../pages/episodes/components/Banner'
 import EpisodeInfo from '../pages/episodes/components/Info'
-import ListItem from '../components/ListItem'
+import CharacterCard from '../components/CharacterCard'
+import ResponsiveList from '../components/ResponsiveList'
+import { Box } from 'rebass/styled-components'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle, { theme } from '../globalStyles'
@@ -61,12 +63,28 @@ const characterName = 'Han Solo'
 const characterImg =
   'https://i.pinimg.com/originals/19/37/95/19379598fbb4338dd02e7ea8dde3ad63.jpg'
 
+const Container = ({ children, ...rest }) => (
+  <Box {...rest} bg="background">
+    <Box width={720} m="auto" py="5">
+      {children}
+    </Box>
+  </Box>
+)
+
 export const List = () => {
   withKnobs()
   const mode = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
   return (
     <ThemeProvider theme={{ ...theme(mode) }}>
-      <ListItem img={characterImg} title={characterName} width={256} />
+      <Container>
+        <ResponsiveList hasMore={true}>
+          <CharacterCard img={characterImg} title={characterName} />
+          <CharacterCard img={characterImg} title={characterName} />
+          <CharacterCard img={characterImg} title={characterName} />
+          <CharacterCard img={characterImg} title={characterName} />
+          <CharacterCard img={characterImg} title={characterName} />
+        </ResponsiveList>
+      </Container>
       <GlobalStyle />
     </ThemeProvider>
   )

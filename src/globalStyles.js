@@ -69,16 +69,16 @@ const themes = {
   letterSpacings: {
     body: 0.1,
     heading: 1,
-    button: 3,
+    button: 2,
   },
   space: [0, 4, 8, 16, 32, 64, 128],
   radii: {
-    default: 4,
+    default: 8,
     circle: 99999,
   },
   buttons: {
     primary: {
-      fontSize: 3,
+      fontSize: 2,
       fontFamily: 'heading',
       fontWeight: 'bold',
       letterSpacing: 'button',
@@ -91,7 +91,7 @@ const themes = {
     },
     secondary: {
       variant: 'buttons.primary',
-      fontSize: 2,
+      fontSize: 1,
       px: 3,
     },
   },
@@ -102,6 +102,7 @@ const themes = {
       border: '1px solid',
       borderRadius: 'default',
       borderColor: 'borderColor',
+      overflow: 'hidden',
     },
   },
   text: {
@@ -129,7 +130,7 @@ const themes = {
     },
     h3: {
       variant: 'text.heading',
-      fontSize: 2,
+      fontSize: 1,
     },
     sub: {
       fontSize: 3,
