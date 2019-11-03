@@ -1,9 +1,9 @@
 import React from 'react'
 import { withKnobs, select } from '@storybook/addon-knobs'
 
-import EpisodeCard from '../pages/episodes/components/EpisodeCard'
-import EpisodeBanner from '../pages/episodes/components/EpisodeBanner'
-import EpisodeInfo from '../pages/episodes/components/EpisodeInfo'
+import EpisodePreview from '../pages/episodes/components/Preview'
+import EpisodeBanner from '../pages/episodes/components/Banner'
+import EpisodeInfo from '../pages/episodes/components/Info'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle, { theme } from '../globalStyles'
@@ -28,7 +28,7 @@ export const Preview = () => {
   const mode = select('Theme', { dark: 'dark', light: 'light' }, 'dark')
   return (
     <ThemeProvider theme={{ ...theme(mode) }}>
-      <EpisodeCard title={title} text={desc} img={img} width={256} />
+      <EpisodePreview title={title} text={desc} img={img} width={256} />
       <GlobalStyle />
     </ThemeProvider>
   )
