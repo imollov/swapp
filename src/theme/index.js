@@ -16,6 +16,10 @@ export default {
     detailValue: palette.lightBlue,
     appBar: palette.black,
     link: palette.lightBlue,
+    inputBg: '#EFF2F7',
+    inputBorder: '#E5E9F2',
+    inputColor: '#3C4858',
+    error: '#DC143C',
     modes: {
       dark: {
         primary: palette.yellow,
@@ -29,6 +33,9 @@ export default {
         detailLabel: palette.lightBlue,
         detailValue: palette.yellow,
         appBar: '#333',
+        inputBg: palette.white,
+        inputBorder: '#3C4858',
+        inputColor: '#273444',
       },
     },
   },
@@ -37,11 +44,10 @@ export default {
     heading: 'starwars',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [16, 18, 22, 26, 32],
+  fontSizes: [16, 18, 20, 26, 32],
   fontWeights: {
     body: 400,
     heading: 800,
-    bold: 700,
   },
   lineHeights: {
     heading: 1,
@@ -52,16 +58,15 @@ export default {
     heading: 1.2,
     button: 2,
   },
-  space: [0, 4, 8, 16, 32, 64, 128, 256],
+  space: [0, 4, 12, 16, 32, 64, 128, 256],
   radii: {
     default: 8,
     circle: 99999,
   },
   buttons: {
     primary: {
-      fontSize: 2,
+      fontSize: 3,
       fontFamily: 'heading',
-      fontWeight: 'bold',
       letterSpacing: 'button',
       color: 'buttonText',
       bg: 'buttonBg',
@@ -138,6 +143,11 @@ export default {
       variant: 'text.body',
       color: 'link',
       cursor: 'pointer',
+    },
+    error: {
+      variant: 'text.body',
+      color: 'error',
+      fontSize: 2,
     },
   },
 }

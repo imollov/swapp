@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rebass/forms": "^4.0.6",
     "@rebass/layout": "^4.0.6",
     "lodash.get": "^4.4.2",
     "lodash.merge": "^4.6.2",
