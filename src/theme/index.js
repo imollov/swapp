@@ -1,27 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import starwars from './fonts/starwars.ttf'
+import palette from './palette'
 
-const getTheme = theme => mode => {
-  const {
-    colors,
-    colors: { modes },
-    initialColorMode,
-  } = theme
-  return {
-    ...theme,
-    colors:
-      mode === initialColorMode ? { ...colors } : { ...colors, ...modes[mode] },
-  }
-}
-
-const palette = {
-  yellow: '#FFE300',
-  lightBlue: '#4BD5EE',
-  black: '#000',
-  white: '#fff',
-}
-
-const themes = {
+export default {
   initialColorMode: 'light',
   colors: {
     primary: palette.lightBlue,
@@ -162,16 +141,3 @@ const themes = {
     },
   },
 }
-
-export const theme = getTheme(themes)
-
-const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: starwars;
-    src: url(${starwars}) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-`
-
-export default GlobalStyle

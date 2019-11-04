@@ -1,11 +1,15 @@
 import React from 'react'
-import ThemedContainer from './common/ThemedContainer'
+
 import EpisodePreview from '../pages/episodes/components/Preview'
 import EpisodeBanner from '../pages/episodes/components/Banner'
 import EpisodeInfo from '../pages/episodes/components/Info'
 import ImageCard from '../components/ImageCard'
 import ResponsiveList from '../components/ResponsiveList'
 import InfoCard from '../components/InfoCard'
+
+import { Box } from 'rebass/styled-components'
+import ThemeProvider from '../components/ThemeProvider'
+import useThemeKnobs from './useThemeKnobs'
 
 export default {
   title: 'Card',
@@ -21,27 +25,42 @@ const details = [['Director', 'George Lucas'], ['Release Date', '1999-05-19']]
 const img =
   'https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg'
 
+const ContentBox = props => {
+  useThemeKnobs()
+  return (
+    <Box {...props} variant="content">
+      {props.children}
+    </Box>
+  )
+}
+
 export const Preview = () => {
   return (
-    <ThemedContainer width={256}>
-      <EpisodePreview title={title} text={desc} img={img} />
-    </ThemedContainer>
+    <ThemeProvider>
+      <ContentBox width={256}>
+        <EpisodePreview title={title} text={desc} img={img} />
+      </ContentBox>
+    </ThemeProvider>
   )
 }
 
 export const Banner = () => {
   return (
-    <ThemedContainer width={940}>
-      <EpisodeBanner title={title} subtitle={subtitle} img={img} />
-    </ThemedContainer>
+    <ThemeProvider>
+      <ContentBox width={940}>
+        <EpisodeBanner title={title} subtitle={subtitle} img={img} />
+      </ContentBox>
+    </ThemeProvider>
   )
 }
 
 export const Info = () => {
   return (
-    <ThemedContainer width={940}>
-      <EpisodeInfo info={desc + desc + desc} details={details} />
-    </ThemedContainer>
+    <ThemeProvider>
+      <ContentBox width={940}>
+        <EpisodeInfo info={desc + desc + desc} details={details} />
+      </ContentBox>
+    </ThemeProvider>
   )
 }
 
@@ -61,53 +80,59 @@ const starshipImg =
 
 export const InfoWithImage = () => {
   return (
-    <ThemedContainer width={470}>
-      <InfoCard
-        title={characterName}
-        img={characterImg}
-        data={characterDetails}
-      />
-    </ThemedContainer>
+    <ThemeProvider>
+      <ContentBox width={470}>
+        <InfoCard
+          title={characterName}
+          img={characterImg}
+          data={characterDetails}
+        />
+      </ContentBox>
+    </ThemeProvider>
   )
 }
 
 export const List3Columns = () => {
   return (
-    <ThemedContainer width={940}>
-      <ResponsiveList hasMore={true}>
-        <ImageCard img={characterImg} title={characterName} height={100} />
-        <ImageCard img={characterImg} title={characterName} height={100} />
-        <ImageCard img={characterImg} title={characterName} height={100} />
-        <ImageCard img={characterImg} title={characterName} height={100} />
-        <ImageCard img={characterImg} title={characterName} height={100} />
-      </ResponsiveList>
-    </ThemedContainer>
+    <ThemeProvider>
+      <ContentBox width={940}>
+        <ResponsiveList hasMore={true}>
+          <ImageCard img={characterImg} title={characterName} height={100} />
+          <ImageCard img={characterImg} title={characterName} height={100} />
+          <ImageCard img={characterImg} title={characterName} height={100} />
+          <ImageCard img={characterImg} title={characterName} height={100} />
+          <ImageCard img={characterImg} title={characterName} height={100} />
+        </ResponsiveList>
+      </ContentBox>
+    </ThemeProvider>
   )
 }
 
 export const List1Column = () => {
   return (
-    <ThemedContainer width={470}>
-      <ResponsiveList maxColumns={1}>
-        <ImageCard
-          variant="compact"
-          img={starshipImg}
-          title={starshipName}
-          height={60}
-        />
-        <ImageCard
-          variant="compact"
-          img={starshipImg}
-          title={starshipName}
-          height={60}
-        />
-        <ImageCard
-          variant="compact"
-          img={starshipImg}
-          title={starshipName}
-          height={60}
-        />
-      </ResponsiveList>
-    </ThemedContainer>
+    <ThemeProvider>
+      <ContentBox width={470}>
+        <ResponsiveList maxColumns={1}>
+          <ImageCard
+            variant="compact"
+            img={starshipImg}
+            title={starshipName}
+            height={60}
+          />
+          <ImageCard
+            variant="compact"
+            img={starshipImg}
+            title={starshipName}
+            height={60}
+          />
+          <ImageCard
+            variant="compact"
+            img={starshipImg}
+            title={starshipName}
+            height={60}
+          />
+        </ResponsiveList>
+      </ContentBox>
+    </ThemeProvider>
   )
 }
