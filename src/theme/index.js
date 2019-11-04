@@ -20,6 +20,7 @@ export default {
     inputBorder: '#E5E9F2',
     inputColor: '#3C4858',
     error: '#DC143C',
+    logo: palette.yellow,
     modes: {
       dark: {
         primary: palette.yellow,
@@ -36,6 +37,7 @@ export default {
         inputBg: palette.white,
         inputBorder: '#3C4858',
         inputColor: '#273444',
+        logo: palette.yellow,
       },
     },
   },
@@ -44,7 +46,7 @@ export default {
     heading: 'starwars',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [16, 18, 20, 26, 32],
+  fontSizes: [16, 18, 20, 26, 32, 64, 72, 84],
   fontWeights: {
     body: 400,
     heading: 800,
@@ -136,7 +138,13 @@ export default {
     logo: {
       small: {
         variant: 'text.heading',
+        color: 'logo',
         fontSize: 4,
+      },
+      large: {
+        variant: 'text.heading',
+        color: 'logo',
+        fontSize: 7,
       },
     },
     link: {
