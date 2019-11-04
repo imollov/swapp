@@ -1,5 +1,7 @@
 import React from 'react'
-import ThemedContainer from './common/ThemedContainer'
+
+import { Box } from 'rebass/styled-components'
+import ThemeProvider from '../components/ThemeProvider'
 
 import AppBar from '../components/AppBar'
 
@@ -9,8 +11,10 @@ export default {
 
 export const Header = () => {
   return (
-    <ThemedContainer>
-      <AppBar />
-    </ThemedContainer>
+    <ThemeProvider>
+      <Box>
+        <AppBar />
+      </Box>
+    </ThemeProvider>
   )
 }
