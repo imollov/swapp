@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageCard Component should match snapshot with variant 1`] = `
+<Styled(styled.div)
+  variant="card"
+>
+  <BackgroundImage
+    src="image.png"
+    width={0.2}
+  />
+  <styled.div
+    margin="auto"
+    p={2}
+    textAlign="center"
+  >
+    <ForwardRef
+      variant="h3"
+    >
+      title
+    </ForwardRef>
+  </styled.div>
+</Styled(styled.div)>
+`;
+
+exports[`ImageCard Component smoke test 1`] = `
+<Styled(styled.div)
+  variant="card"
+>
+  <BackgroundImage
+    src="image.png"
+    width={0.3333333333333333}
+  />
+  <styled.div
+    margin="auto"
+    p={2}
+    textAlign="center"
+  >
+    <ForwardRef
+      variant="h3"
+    >
+      title
+    </ForwardRef>
+  </styled.div>
+</Styled(styled.div)>
+`;

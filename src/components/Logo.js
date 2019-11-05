@@ -1,14 +1,16 @@
 import React, { useContext } from 'react'
+import PropTypes from 'prop-types'
 import { Heading } from 'rebass/styled-components'
 
 import { ThemeContext } from './ThemeProvider'
 
-export default props => {
+const Logo = ({ variant, ...rest }) => {
   const { toggleMode } = useContext(ThemeContext)
 
   return (
     <Heading
-      {...props}
+      {...rest}
+      variant={variant}
       as="span"
       sx={{ cursor: 'pointer' }}
       onClick={() => toggleMode()}
@@ -17,3 +19,9 @@ export default props => {
     </Heading>
   )
 }
+
+Logo.propTypes = {
+  variant: PropTypes.oneOf(['logo.small', 'logo.large', undefined]),
+}
+
+export default Logo

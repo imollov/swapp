@@ -1,0 +1,2350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EpisodeBanner Component should match snapshot 1`] = `
+<_default>
+  <ThemeProvider
+    theme={
+      Object {
+        "buttons": Object {
+          "primary": Object {
+            "bg": "buttonBg",
+            "borderRadius": "default",
+            "color": "buttonText",
+            "cursor": "pointer",
+            "fontFamily": "heading",
+            "fontSize": Array [
+              1,
+              1,
+              2,
+            ],
+            "letterSpacing": "button",
+            "px": 4,
+            "py": 2,
+          },
+          "secondary": Object {
+            "px": 3,
+            "variant": "buttons.primary",
+          },
+        },
+        "colors": Object {
+          "appBar": "#000",
+          "background": "#E8EAED",
+          "borderColor": "#E5E9F2",
+          "buttonBg": "#000",
+          "buttonText": "#FFE300",
+          "detailLabel": "#4E5B6E",
+          "detailValue": "#4BD5EE",
+          "divider": "#000",
+          "error": "#DC143C",
+          "inputBg": "#EFF2F7",
+          "inputBorder": "#E5E9F2",
+          "inputColor": "#3C4858",
+          "link": "#4BD5EE",
+          "logo": "#FFE300",
+          "modes": Object {
+            "dark": Object {
+              "appBar": "#333",
+              "background": "#000",
+              "borderColor": "#3C4858",
+              "buttonBg": "#4BD5EE",
+              "detailLabel": "#4BD5EE",
+              "detailValue": "#FFE300",
+              "divider": "#999",
+              "inputBg": "#fff",
+              "inputBorder": "#3C4858",
+              "inputColor": "#273444",
+              "logo": "#FFE300",
+              "muted": "#333",
+              "primary": "#FFE300",
+              "secondary": "#4BD5EE",
+              "subHeading": "#4BD5EE",
+              "text": "#abb1ba",
+            },
+          },
+          "muted": "#fff",
+          "primary": "#4BD5EE",
+          "secondary": "#FFE300",
+          "subHeading": "#4E5B6E",
+          "text": "#4E5B6E",
+        },
+        "fontSizes": Array [
+          16,
+          18,
+          20,
+          26,
+          32,
+          36,
+          72,
+          84,
+        ],
+        "fontWeights": Object {
+          "body": 400,
+          "heading": 800,
+        },
+        "fonts": Object {
+          "body": "Helvetica",
+          "heading": "starwars",
+          "monospace": "Menlo, monospace",
+        },
+        "initialColorMode": "light",
+        "letterSpacings": Object {
+          "body": 0.1,
+          "button": 2,
+          "heading": 1.2,
+        },
+        "lineHeights": Object {
+          "body": 1.2,
+          "heading": 1,
+        },
+        "radii": Object {
+          "circle": 99999,
+          "default": 8,
+        },
+        "space": Array [
+          0,
+          4,
+          12,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "text": Object {
+          "body": Object {
+            "fontFamily": "body",
+            "fontSize": Array [
+              1,
+              null,
+              0,
+            ],
+            "letterSpacing": "body",
+            "lineHeight": "body",
+          },
+          "error": Object {
+            "color": "error",
+            "fontSize": 2,
+            "variant": "text.body",
+          },
+          "h1": Object {
+            "fontSize": Array [
+              5,
+              null,
+              4,
+            ],
+            "variant": "text.heading",
+          },
+          "h2": Object {
+            "fontSize": Array [
+              4,
+              null,
+              3,
+            ],
+            "variant": "text.heading",
+          },
+          "h3": Object {
+            "fontSize": Array [
+              2,
+              2,
+              1,
+            ],
+            "variant": "text.heading",
+          },
+          "heading": Object {
+            "color": "primary",
+            "fontFamily": "heading",
+            "fontWeight": "heading",
+            "letterSpacing": "heading",
+            "lineHeight": "heading",
+          },
+          "link": Object {
+            "color": "link",
+            "cursor": "pointer",
+            "variant": "text.body",
+          },
+          "logo": Object {
+            "large": Object {
+              "color": "logo",
+              "fontSize": 7,
+              "variant": "text.heading",
+            },
+            "small": Object {
+              "color": "logo",
+              "fontSize": 4,
+              "variant": "text.heading",
+            },
+          },
+          "sub": Object {
+            "color": "subHeading",
+            "fontSize": Array [
+              2,
+              2,
+              3,
+            ],
+            "variant": "text.heading",
+          },
+        },
+        "variants": Object {
+          "card": Object {
+            "bg": "muted",
+            "border": "1px solid",
+            "borderColor": "borderColor",
+            "borderRadius": "default",
+            "color": "text",
+            "overflow": "hidden",
+          },
+          "content": Object {
+            "bg": "background",
+            "m": "auto",
+            "p": 4,
+            "width": Array [
+              400,
+              600,
+              1000,
+            ],
+          },
+          "fitContent": Object {
+            "maxwidth": "740px",
+            "variant": "variants.container",
+          },
+        },
+      }
+    }
+  >
+    <WithTheme(Logout)
+      p={3}
+    >
+      <Logout
+        p={3}
+        theme={
+          Object {
+            "buttons": Object {
+              "primary": Object {
+                "bg": "buttonBg",
+                "borderRadius": "default",
+                "color": "buttonText",
+                "cursor": "pointer",
+                "fontFamily": "heading",
+                "fontSize": Array [
+                  1,
+                  1,
+                  2,
+                ],
+                "letterSpacing": "button",
+                "px": 4,
+                "py": 2,
+              },
+              "secondary": Object {
+                "px": 3,
+                "variant": "buttons.primary",
+              },
+            },
+            "colors": Object {
+              "appBar": "#000",
+              "background": "#E8EAED",
+              "borderColor": "#E5E9F2",
+              "buttonBg": "#000",
+              "buttonText": "#FFE300",
+              "detailLabel": "#4E5B6E",
+              "detailValue": "#4BD5EE",
+              "divider": "#000",
+              "error": "#DC143C",
+              "inputBg": "#EFF2F7",
+              "inputBorder": "#E5E9F2",
+              "inputColor": "#3C4858",
+              "link": "#4BD5EE",
+              "logo": "#FFE300",
+              "modes": Object {
+                "dark": Object {
+                  "appBar": "#333",
+                  "background": "#000",
+                  "borderColor": "#3C4858",
+                  "buttonBg": "#4BD5EE",
+                  "detailLabel": "#4BD5EE",
+                  "detailValue": "#FFE300",
+                  "divider": "#999",
+                  "inputBg": "#fff",
+                  "inputBorder": "#3C4858",
+                  "inputColor": "#273444",
+                  "logo": "#FFE300",
+                  "muted": "#333",
+                  "primary": "#FFE300",
+                  "secondary": "#4BD5EE",
+                  "subHeading": "#4BD5EE",
+                  "text": "#abb1ba",
+                },
+              },
+              "muted": "#fff",
+              "primary": "#4BD5EE",
+              "secondary": "#FFE300",
+              "subHeading": "#4E5B6E",
+              "text": "#4E5B6E",
+            },
+            "fontSizes": Array [
+              16,
+              18,
+              20,
+              26,
+              32,
+              36,
+              72,
+              84,
+            ],
+            "fontWeights": Object {
+              "body": 400,
+              "heading": 800,
+            },
+            "fonts": Object {
+              "body": "Helvetica",
+              "heading": "starwars",
+              "monospace": "Menlo, monospace",
+            },
+            "initialColorMode": "light",
+            "letterSpacings": Object {
+              "body": 0.1,
+              "button": 2,
+              "heading": 1.2,
+            },
+            "lineHeights": Object {
+              "body": 1.2,
+              "heading": 1,
+            },
+            "radii": Object {
+              "circle": 99999,
+              "default": 8,
+            },
+            "space": Array [
+              0,
+              4,
+              12,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "text": Object {
+              "body": Object {
+                "fontFamily": "body",
+                "fontSize": Array [
+                  1,
+                  null,
+                  0,
+                ],
+                "letterSpacing": "body",
+                "lineHeight": "body",
+              },
+              "error": Object {
+                "color": "error",
+                "fontSize": 2,
+                "variant": "text.body",
+              },
+              "h1": Object {
+                "fontSize": Array [
+                  5,
+                  null,
+                  4,
+                ],
+                "variant": "text.heading",
+              },
+              "h2": Object {
+                "fontSize": Array [
+                  4,
+                  null,
+                  3,
+                ],
+                "variant": "text.heading",
+              },
+              "h3": Object {
+                "fontSize": Array [
+                  2,
+                  2,
+                  1,
+                ],
+                "variant": "text.heading",
+              },
+              "heading": Object {
+                "color": "primary",
+                "fontFamily": "heading",
+                "fontWeight": "heading",
+                "letterSpacing": "heading",
+                "lineHeight": "heading",
+              },
+              "link": Object {
+                "color": "link",
+                "cursor": "pointer",
+                "variant": "text.body",
+              },
+              "logo": Object {
+                "large": Object {
+                  "color": "logo",
+                  "fontSize": 7,
+                  "variant": "text.heading",
+                },
+                "small": Object {
+                  "color": "logo",
+                  "fontSize": 4,
+                  "variant": "text.heading",
+                },
+              },
+              "sub": Object {
+                "color": "subHeading",
+                "fontSize": Array [
+                  2,
+                  2,
+                  3,
+                ],
+                "variant": "text.heading",
+              },
+            },
+            "variants": Object {
+              "card": Object {
+                "bg": "muted",
+                "border": "1px solid",
+                "borderColor": "borderColor",
+                "borderRadius": "default",
+                "color": "text",
+                "overflow": "hidden",
+              },
+              "content": Object {
+                "bg": "background",
+                "m": "auto",
+                "p": 4,
+                "width": Array [
+                  400,
+                  600,
+                  1000,
+                ],
+              },
+              "fitContent": Object {
+                "maxwidth": "740px",
+                "variant": "variants.container",
+              },
+            },
+          }
+        }
+      >
+        <styled.div
+          p={3}
+          sx={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+          theme={
+            Object {
+              "buttons": Object {
+                "primary": Object {
+                  "bg": "buttonBg",
+                  "borderRadius": "default",
+                  "color": "buttonText",
+                  "cursor": "pointer",
+                  "fontFamily": "heading",
+                  "fontSize": Array [
+                    1,
+                    1,
+                    2,
+                  ],
+                  "letterSpacing": "button",
+                  "px": 4,
+                  "py": 2,
+                },
+                "secondary": Object {
+                  "px": 3,
+                  "variant": "buttons.primary",
+                },
+              },
+              "colors": Object {
+                "appBar": "#000",
+                "background": "#E8EAED",
+                "borderColor": "#E5E9F2",
+                "buttonBg": "#000",
+                "buttonText": "#FFE300",
+                "detailLabel": "#4E5B6E",
+                "detailValue": "#4BD5EE",
+                "divider": "#000",
+                "error": "#DC143C",
+                "inputBg": "#EFF2F7",
+                "inputBorder": "#E5E9F2",
+                "inputColor": "#3C4858",
+                "link": "#4BD5EE",
+                "logo": "#FFE300",
+                "modes": Object {
+                  "dark": Object {
+                    "appBar": "#333",
+                    "background": "#000",
+                    "borderColor": "#3C4858",
+                    "buttonBg": "#4BD5EE",
+                    "detailLabel": "#4BD5EE",
+                    "detailValue": "#FFE300",
+                    "divider": "#999",
+                    "inputBg": "#fff",
+                    "inputBorder": "#3C4858",
+                    "inputColor": "#273444",
+                    "logo": "#FFE300",
+                    "muted": "#333",
+                    "primary": "#FFE300",
+                    "secondary": "#4BD5EE",
+                    "subHeading": "#4BD5EE",
+                    "text": "#abb1ba",
+                  },
+                },
+                "muted": "#fff",
+                "primary": "#4BD5EE",
+                "secondary": "#FFE300",
+                "subHeading": "#4E5B6E",
+                "text": "#4E5B6E",
+              },
+              "fontSizes": Array [
+                16,
+                18,
+                20,
+                26,
+                32,
+                36,
+                72,
+                84,
+              ],
+              "fontWeights": Object {
+                "body": 400,
+                "heading": 800,
+              },
+              "fonts": Object {
+                "body": "Helvetica",
+                "heading": "starwars",
+                "monospace": "Menlo, monospace",
+              },
+              "initialColorMode": "light",
+              "letterSpacings": Object {
+                "body": 0.1,
+                "button": 2,
+                "heading": 1.2,
+              },
+              "lineHeights": Object {
+                "body": 1.2,
+                "heading": 1,
+              },
+              "radii": Object {
+                "circle": 99999,
+                "default": 8,
+              },
+              "space": Array [
+                0,
+                4,
+                12,
+                16,
+                32,
+                64,
+                128,
+                256,
+              ],
+              "text": Object {
+                "body": Object {
+                  "fontFamily": "body",
+                  "fontSize": Array [
+                    1,
+                    null,
+                    0,
+                  ],
+                  "letterSpacing": "body",
+                  "lineHeight": "body",
+                },
+                "error": Object {
+                  "color": "error",
+                  "fontSize": 2,
+                  "variant": "text.body",
+                },
+                "h1": Object {
+                  "fontSize": Array [
+                    5,
+                    null,
+                    4,
+                  ],
+                  "variant": "text.heading",
+                },
+                "h2": Object {
+                  "fontSize": Array [
+                    4,
+                    null,
+                    3,
+                  ],
+                  "variant": "text.heading",
+                },
+                "h3": Object {
+                  "fontSize": Array [
+                    2,
+                    2,
+                    1,
+                  ],
+                  "variant": "text.heading",
+                },
+                "heading": Object {
+                  "color": "primary",
+                  "fontFamily": "heading",
+                  "fontWeight": "heading",
+                  "letterSpacing": "heading",
+                  "lineHeight": "heading",
+                },
+                "link": Object {
+                  "color": "link",
+                  "cursor": "pointer",
+                  "variant": "text.body",
+                },
+                "logo": Object {
+                  "large": Object {
+                    "color": "logo",
+                    "fontSize": 7,
+                    "variant": "text.heading",
+                  },
+                  "small": Object {
+                    "color": "logo",
+                    "fontSize": 4,
+                    "variant": "text.heading",
+                  },
+                },
+                "sub": Object {
+                  "color": "subHeading",
+                  "fontSize": Array [
+                    2,
+                    2,
+                    3,
+                  ],
+                  "variant": "text.heading",
+                },
+              },
+              "variants": Object {
+                "card": Object {
+                  "bg": "muted",
+                  "border": "1px solid",
+                  "borderColor": "borderColor",
+                  "borderRadius": "default",
+                  "color": "text",
+                  "overflow": "hidden",
+                },
+                "content": Object {
+                  "bg": "background",
+                  "m": "auto",
+                  "p": 4,
+                  "width": Array [
+                    400,
+                    600,
+                    1000,
+                  ],
+                },
+                "fitContent": Object {
+                  "maxwidth": "740px",
+                  "variant": "variants.container",
+                },
+              },
+            }
+          }
+          variant="card"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "bHKaxy",
+                  "rules": Array [
+                    "box-sizing: border-box;",
+                    "margin: 0;",
+                    "min-width: 0;",
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            p={3}
+            sx={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            theme={
+              Object {
+                "buttons": Object {
+                  "primary": Object {
+                    "bg": "buttonBg",
+                    "borderRadius": "default",
+                    "color": "buttonText",
+                    "cursor": "pointer",
+                    "fontFamily": "heading",
+                    "fontSize": Array [
+                      1,
+                      1,
+                      2,
+                    ],
+                    "letterSpacing": "button",
+                    "px": 4,
+                    "py": 2,
+                  },
+                  "secondary": Object {
+                    "px": 3,
+                    "variant": "buttons.primary",
+                  },
+                },
+                "colors": Object {
+                  "appBar": "#000",
+                  "background": "#E8EAED",
+                  "borderColor": "#E5E9F2",
+                  "buttonBg": "#000",
+                  "buttonText": "#FFE300",
+                  "detailLabel": "#4E5B6E",
+                  "detailValue": "#4BD5EE",
+                  "divider": "#000",
+                  "error": "#DC143C",
+                  "inputBg": "#EFF2F7",
+                  "inputBorder": "#E5E9F2",
+                  "inputColor": "#3C4858",
+                  "link": "#4BD5EE",
+                  "logo": "#FFE300",
+                  "modes": Object {
+                    "dark": Object {
+                      "appBar": "#333",
+                      "background": "#000",
+                      "borderColor": "#3C4858",
+                      "buttonBg": "#4BD5EE",
+                      "detailLabel": "#4BD5EE",
+                      "detailValue": "#FFE300",
+                      "divider": "#999",
+                      "inputBg": "#fff",
+                      "inputBorder": "#3C4858",
+                      "inputColor": "#273444",
+                      "logo": "#FFE300",
+                      "muted": "#333",
+                      "primary": "#FFE300",
+                      "secondary": "#4BD5EE",
+                      "subHeading": "#4BD5EE",
+                      "text": "#abb1ba",
+                    },
+                  },
+                  "muted": "#fff",
+                  "primary": "#4BD5EE",
+                  "secondary": "#FFE300",
+                  "subHeading": "#4E5B6E",
+                  "text": "#4E5B6E",
+                },
+                "fontSizes": Array [
+                  16,
+                  18,
+                  20,
+                  26,
+                  32,
+                  36,
+                  72,
+                  84,
+                ],
+                "fontWeights": Object {
+                  "body": 400,
+                  "heading": 800,
+                },
+                "fonts": Object {
+                  "body": "Helvetica",
+                  "heading": "starwars",
+                  "monospace": "Menlo, monospace",
+                },
+                "initialColorMode": "light",
+                "letterSpacings": Object {
+                  "body": 0.1,
+                  "button": 2,
+                  "heading": 1.2,
+                },
+                "lineHeights": Object {
+                  "body": 1.2,
+                  "heading": 1,
+                },
+                "radii": Object {
+                  "circle": 99999,
+                  "default": 8,
+                },
+                "space": Array [
+                  0,
+                  4,
+                  12,
+                  16,
+                  32,
+                  64,
+                  128,
+                  256,
+                ],
+                "text": Object {
+                  "body": Object {
+                    "fontFamily": "body",
+                    "fontSize": Array [
+                      1,
+                      null,
+                      0,
+                    ],
+                    "letterSpacing": "body",
+                    "lineHeight": "body",
+                  },
+                  "error": Object {
+                    "color": "error",
+                    "fontSize": 2,
+                    "variant": "text.body",
+                  },
+                  "h1": Object {
+                    "fontSize": Array [
+                      5,
+                      null,
+                      4,
+                    ],
+                    "variant": "text.heading",
+                  },
+                  "h2": Object {
+                    "fontSize": Array [
+                      4,
+                      null,
+                      3,
+                    ],
+                    "variant": "text.heading",
+                  },
+                  "h3": Object {
+                    "fontSize": Array [
+                      2,
+                      2,
+                      1,
+                    ],
+                    "variant": "text.heading",
+                  },
+                  "heading": Object {
+                    "color": "primary",
+                    "fontFamily": "heading",
+                    "fontWeight": "heading",
+                    "letterSpacing": "heading",
+                    "lineHeight": "heading",
+                  },
+                  "link": Object {
+                    "color": "link",
+                    "cursor": "pointer",
+                    "variant": "text.body",
+                  },
+                  "logo": Object {
+                    "large": Object {
+                      "color": "logo",
+                      "fontSize": 7,
+                      "variant": "text.heading",
+                    },
+                    "small": Object {
+                      "color": "logo",
+                      "fontSize": 4,
+                      "variant": "text.heading",
+                    },
+                  },
+                  "sub": Object {
+                    "color": "subHeading",
+                    "fontSize": Array [
+                      2,
+                      2,
+                      3,
+                    ],
+                    "variant": "text.heading",
+                  },
+                },
+                "variants": Object {
+                  "card": Object {
+                    "bg": "muted",
+                    "border": "1px solid",
+                    "borderColor": "borderColor",
+                    "borderRadius": "default",
+                    "color": "text",
+                    "overflow": "hidden",
+                  },
+                  "content": Object {
+                    "bg": "background",
+                    "m": "auto",
+                    "p": 4,
+                    "width": Array [
+                      400,
+                      600,
+                      1000,
+                    ],
+                  },
+                  "fitContent": Object {
+                    "maxwidth": "740px",
+                    "variant": "variants.container",
+                  },
+                },
+              }
+            }
+            variant="card"
+          >
+            <div
+              className="sc-bdVaJa bHKaxy"
+            >
+              <FiLogOut
+                color="#4BD5EE"
+                style={
+                  Object {
+                    "justifyContent": "center",
+                    "padding": 8,
+                    "verticalAlign": "middle",
+                  }
+                }
+              >
+                <IconBase
+                  attr={
+                    Object {
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "strokeLinecap": "round",
+                      "strokeLinejoin": "round",
+                      "strokeWidth": "2",
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  color="#4BD5EE"
+                  style={
+                    Object {
+                      "justifyContent": "center",
+                      "padding": 8,
+                      "verticalAlign": "middle",
+                    }
+                  }
+                >
+                  <svg
+                    color="#4BD5EE"
+                    fill="none"
+                    height="1em"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    style={
+                      Object {
+                        "color": "#4BD5EE",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "verticalAlign": "middle",
+                      }
+                    }
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+                      key="0"
+                    />
+                    <polyline
+                      key="1"
+                      points="16 17 21 12 16 7"
+                    />
+                    <line
+                      key="2"
+                      x1="21"
+                      x2="9"
+                      y1="12"
+                      y2="12"
+                    />
+                  </svg>
+                </IconBase>
+              </FiLogOut>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </Logout>
+    </WithTheme(Logout)>
+    <WithTheme(GlobalStyleComponent)>
+      <GlobalStyleComponent
+        theme={
+          Object {
+            "buttons": Object {
+              "primary": Object {
+                "bg": "buttonBg",
+                "borderRadius": "default",
+                "color": "buttonText",
+                "cursor": "pointer",
+                "fontFamily": "heading",
+                "fontSize": Array [
+                  1,
+                  1,
+                  2,
+                ],
+                "letterSpacing": "button",
+                "px": 4,
+                "py": 2,
+              },
+              "secondary": Object {
+                "px": 3,
+                "variant": "buttons.primary",
+              },
+            },
+            "colors": Object {
+              "appBar": "#000",
+              "background": "#E8EAED",
+              "borderColor": "#E5E9F2",
+              "buttonBg": "#000",
+              "buttonText": "#FFE300",
+              "detailLabel": "#4E5B6E",
+              "detailValue": "#4BD5EE",
+              "divider": "#000",
+              "error": "#DC143C",
+              "inputBg": "#EFF2F7",
+              "inputBorder": "#E5E9F2",
+              "inputColor": "#3C4858",
+              "link": "#4BD5EE",
+              "logo": "#FFE300",
+              "modes": Object {
+                "dark": Object {
+                  "appBar": "#333",
+                  "background": "#000",
+                  "borderColor": "#3C4858",
+                  "buttonBg": "#4BD5EE",
+                  "detailLabel": "#4BD5EE",
+                  "detailValue": "#FFE300",
+                  "divider": "#999",
+                  "inputBg": "#fff",
+                  "inputBorder": "#3C4858",
+                  "inputColor": "#273444",
+                  "logo": "#FFE300",
+                  "muted": "#333",
+                  "primary": "#FFE300",
+                  "secondary": "#4BD5EE",
+                  "subHeading": "#4BD5EE",
+                  "text": "#abb1ba",
+                },
+              },
+              "muted": "#fff",
+              "primary": "#4BD5EE",
+              "secondary": "#FFE300",
+              "subHeading": "#4E5B6E",
+              "text": "#4E5B6E",
+            },
+            "fontSizes": Array [
+              16,
+              18,
+              20,
+              26,
+              32,
+              36,
+              72,
+              84,
+            ],
+            "fontWeights": Object {
+              "body": 400,
+              "heading": 800,
+            },
+            "fonts": Object {
+              "body": "Helvetica",
+              "heading": "starwars",
+              "monospace": "Menlo, monospace",
+            },
+            "initialColorMode": "light",
+            "letterSpacings": Object {
+              "body": 0.1,
+              "button": 2,
+              "heading": 1.2,
+            },
+            "lineHeights": Object {
+              "body": 1.2,
+              "heading": 1,
+            },
+            "radii": Object {
+              "circle": 99999,
+              "default": 8,
+            },
+            "space": Array [
+              0,
+              4,
+              12,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "text": Object {
+              "body": Object {
+                "fontFamily": "body",
+                "fontSize": Array [
+                  1,
+                  null,
+                  0,
+                ],
+                "letterSpacing": "body",
+                "lineHeight": "body",
+              },
+              "error": Object {
+                "color": "error",
+                "fontSize": 2,
+                "variant": "text.body",
+              },
+              "h1": Object {
+                "fontSize": Array [
+                  5,
+                  null,
+                  4,
+                ],
+                "variant": "text.heading",
+              },
+              "h2": Object {
+                "fontSize": Array [
+                  4,
+                  null,
+                  3,
+                ],
+                "variant": "text.heading",
+              },
+              "h3": Object {
+                "fontSize": Array [
+                  2,
+                  2,
+                  1,
+                ],
+                "variant": "text.heading",
+              },
+              "heading": Object {
+                "color": "primary",
+                "fontFamily": "heading",
+                "fontWeight": "heading",
+                "letterSpacing": "heading",
+                "lineHeight": "heading",
+              },
+              "link": Object {
+                "color": "link",
+                "cursor": "pointer",
+                "variant": "text.body",
+              },
+              "logo": Object {
+                "large": Object {
+                  "color": "logo",
+                  "fontSize": 7,
+                  "variant": "text.heading",
+                },
+                "small": Object {
+                  "color": "logo",
+                  "fontSize": 4,
+                  "variant": "text.heading",
+                },
+              },
+              "sub": Object {
+                "color": "subHeading",
+                "fontSize": Array [
+                  2,
+                  2,
+                  3,
+                ],
+                "variant": "text.heading",
+              },
+            },
+            "variants": Object {
+              "card": Object {
+                "bg": "muted",
+                "border": "1px solid",
+                "borderColor": "borderColor",
+                "borderRadius": "default",
+                "color": "text",
+                "overflow": "hidden",
+              },
+              "content": Object {
+                "bg": "background",
+                "m": "auto",
+                "p": 4,
+                "width": Array [
+                  400,
+                  600,
+                  1000,
+                ],
+              },
+              "fitContent": Object {
+                "maxwidth": "740px",
+                "variant": "variants.container",
+              },
+            },
+          }
+        }
+      />
+    </WithTheme(GlobalStyleComponent)>
+  </ThemeProvider>
+</_default>
+`;
+
+exports[`EpisodeBanner Component smoke test 1`] = `
+<_default>
+  <ThemeProvider
+    theme={
+      Object {
+        "buttons": Object {
+          "primary": Object {
+            "bg": "buttonBg",
+            "borderRadius": "default",
+            "color": "buttonText",
+            "cursor": "pointer",
+            "fontFamily": "heading",
+            "fontSize": Array [
+              1,
+              1,
+              2,
+            ],
+            "letterSpacing": "button",
+            "px": 4,
+            "py": 2,
+          },
+          "secondary": Object {
+            "px": 3,
+            "variant": "buttons.primary",
+          },
+        },
+        "colors": Object {
+          "appBar": "#000",
+          "background": "#E8EAED",
+          "borderColor": "#E5E9F2",
+          "buttonBg": "#000",
+          "buttonText": "#FFE300",
+          "detailLabel": "#4E5B6E",
+          "detailValue": "#4BD5EE",
+          "divider": "#000",
+          "error": "#DC143C",
+          "inputBg": "#EFF2F7",
+          "inputBorder": "#E5E9F2",
+          "inputColor": "#3C4858",
+          "link": "#4BD5EE",
+          "logo": "#FFE300",
+          "modes": Object {
+            "dark": Object {
+              "appBar": "#333",
+              "background": "#000",
+              "borderColor": "#3C4858",
+              "buttonBg": "#4BD5EE",
+              "detailLabel": "#4BD5EE",
+              "detailValue": "#FFE300",
+              "divider": "#999",
+              "inputBg": "#fff",
+              "inputBorder": "#3C4858",
+              "inputColor": "#273444",
+              "logo": "#FFE300",
+              "muted": "#333",
+              "primary": "#FFE300",
+              "secondary": "#4BD5EE",
+              "subHeading": "#4BD5EE",
+              "text": "#abb1ba",
+            },
+          },
+          "muted": "#fff",
+          "primary": "#4BD5EE",
+          "secondary": "#FFE300",
+          "subHeading": "#4E5B6E",
+          "text": "#4E5B6E",
+        },
+        "fontSizes": Array [
+          16,
+          18,
+          20,
+          26,
+          32,
+          36,
+          72,
+          84,
+        ],
+        "fontWeights": Object {
+          "body": 400,
+          "heading": 800,
+        },
+        "fonts": Object {
+          "body": "Helvetica",
+          "heading": "starwars",
+          "monospace": "Menlo, monospace",
+        },
+        "initialColorMode": "light",
+        "letterSpacings": Object {
+          "body": 0.1,
+          "button": 2,
+          "heading": 1.2,
+        },
+        "lineHeights": Object {
+          "body": 1.2,
+          "heading": 1,
+        },
+        "radii": Object {
+          "circle": 99999,
+          "default": 8,
+        },
+        "space": Array [
+          0,
+          4,
+          12,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "text": Object {
+          "body": Object {
+            "fontFamily": "body",
+            "fontSize": Array [
+              1,
+              null,
+              0,
+            ],
+            "letterSpacing": "body",
+            "lineHeight": "body",
+          },
+          "error": Object {
+            "color": "error",
+            "fontSize": 2,
+            "variant": "text.body",
+          },
+          "h1": Object {
+            "fontSize": Array [
+              5,
+              null,
+              4,
+            ],
+            "variant": "text.heading",
+          },
+          "h2": Object {
+            "fontSize": Array [
+              4,
+              null,
+              3,
+            ],
+            "variant": "text.heading",
+          },
+          "h3": Object {
+            "fontSize": Array [
+              2,
+              2,
+              1,
+            ],
+            "variant": "text.heading",
+          },
+          "heading": Object {
+            "color": "primary",
+            "fontFamily": "heading",
+            "fontWeight": "heading",
+            "letterSpacing": "heading",
+            "lineHeight": "heading",
+          },
+          "link": Object {
+            "color": "link",
+            "cursor": "pointer",
+            "variant": "text.body",
+          },
+          "logo": Object {
+            "large": Object {
+              "color": "logo",
+              "fontSize": 7,
+              "variant": "text.heading",
+            },
+            "small": Object {
+              "color": "logo",
+              "fontSize": 4,
+              "variant": "text.heading",
+            },
+          },
+          "sub": Object {
+            "color": "subHeading",
+            "fontSize": Array [
+              2,
+              2,
+              3,
+            ],
+            "variant": "text.heading",
+          },
+        },
+        "variants": Object {
+          "card": Object {
+            "bg": "muted",
+            "border": "1px solid",
+            "borderColor": "borderColor",
+            "borderRadius": "default",
+            "color": "text",
+            "overflow": "hidden",
+          },
+          "content": Object {
+            "bg": "background",
+            "m": "auto",
+            "p": 4,
+            "width": Array [
+              400,
+              600,
+              1000,
+            ],
+          },
+          "fitContent": Object {
+            "maxwidth": "740px",
+            "variant": "variants.container",
+          },
+        },
+      }
+    }
+  >
+    <WithTheme(Logout)>
+      <Logout
+        theme={
+          Object {
+            "buttons": Object {
+              "primary": Object {
+                "bg": "buttonBg",
+                "borderRadius": "default",
+                "color": "buttonText",
+                "cursor": "pointer",
+                "fontFamily": "heading",
+                "fontSize": Array [
+                  1,
+                  1,
+                  2,
+                ],
+                "letterSpacing": "button",
+                "px": 4,
+                "py": 2,
+              },
+              "secondary": Object {
+                "px": 3,
+                "variant": "buttons.primary",
+              },
+            },
+            "colors": Object {
+              "appBar": "#000",
+              "background": "#E8EAED",
+              "borderColor": "#E5E9F2",
+              "buttonBg": "#000",
+              "buttonText": "#FFE300",
+              "detailLabel": "#4E5B6E",
+              "detailValue": "#4BD5EE",
+              "divider": "#000",
+              "error": "#DC143C",
+              "inputBg": "#EFF2F7",
+              "inputBorder": "#E5E9F2",
+              "inputColor": "#3C4858",
+              "link": "#4BD5EE",
+              "logo": "#FFE300",
+              "modes": Object {
+                "dark": Object {
+                  "appBar": "#333",
+                  "background": "#000",
+                  "borderColor": "#3C4858",
+                  "buttonBg": "#4BD5EE",
+                  "detailLabel": "#4BD5EE",
+                  "detailValue": "#FFE300",
+                  "divider": "#999",
+                  "inputBg": "#fff",
+                  "inputBorder": "#3C4858",
+                  "inputColor": "#273444",
+                  "logo": "#FFE300",
+                  "muted": "#333",
+                  "primary": "#FFE300",
+                  "secondary": "#4BD5EE",
+                  "subHeading": "#4BD5EE",
+                  "text": "#abb1ba",
+                },
+              },
+              "muted": "#fff",
+              "primary": "#4BD5EE",
+              "secondary": "#FFE300",
+              "subHeading": "#4E5B6E",
+              "text": "#4E5B6E",
+            },
+            "fontSizes": Array [
+              16,
+              18,
+              20,
+              26,
+              32,
+              36,
+              72,
+              84,
+            ],
+            "fontWeights": Object {
+              "body": 400,
+              "heading": 800,
+            },
+            "fonts": Object {
+              "body": "Helvetica",
+              "heading": "starwars",
+              "monospace": "Menlo, monospace",
+            },
+            "initialColorMode": "light",
+            "letterSpacings": Object {
+              "body": 0.1,
+              "button": 2,
+              "heading": 1.2,
+            },
+            "lineHeights": Object {
+              "body": 1.2,
+              "heading": 1,
+            },
+            "radii": Object {
+              "circle": 99999,
+              "default": 8,
+            },
+            "space": Array [
+              0,
+              4,
+              12,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "text": Object {
+              "body": Object {
+                "fontFamily": "body",
+                "fontSize": Array [
+                  1,
+                  null,
+                  0,
+                ],
+                "letterSpacing": "body",
+                "lineHeight": "body",
+              },
+              "error": Object {
+                "color": "error",
+                "fontSize": 2,
+                "variant": "text.body",
+              },
+              "h1": Object {
+                "fontSize": Array [
+                  5,
+                  null,
+                  4,
+                ],
+                "variant": "text.heading",
+              },
+              "h2": Object {
+                "fontSize": Array [
+                  4,
+                  null,
+                  3,
+                ],
+                "variant": "text.heading",
+              },
+              "h3": Object {
+                "fontSize": Array [
+                  2,
+                  2,
+                  1,
+                ],
+                "variant": "text.heading",
+              },
+              "heading": Object {
+                "color": "primary",
+                "fontFamily": "heading",
+                "fontWeight": "heading",
+                "letterSpacing": "heading",
+                "lineHeight": "heading",
+              },
+              "link": Object {
+                "color": "link",
+                "cursor": "pointer",
+                "variant": "text.body",
+              },
+              "logo": Object {
+                "large": Object {
+                  "color": "logo",
+                  "fontSize": 7,
+                  "variant": "text.heading",
+                },
+                "small": Object {
+                  "color": "logo",
+                  "fontSize": 4,
+                  "variant": "text.heading",
+                },
+              },
+              "sub": Object {
+                "color": "subHeading",
+                "fontSize": Array [
+                  2,
+                  2,
+                  3,
+                ],
+                "variant": "text.heading",
+              },
+            },
+            "variants": Object {
+              "card": Object {
+                "bg": "muted",
+                "border": "1px solid",
+                "borderColor": "borderColor",
+                "borderRadius": "default",
+                "color": "text",
+                "overflow": "hidden",
+              },
+              "content": Object {
+                "bg": "background",
+                "m": "auto",
+                "p": 4,
+                "width": Array [
+                  400,
+                  600,
+                  1000,
+                ],
+              },
+              "fitContent": Object {
+                "maxwidth": "740px",
+                "variant": "variants.container",
+              },
+            },
+          }
+        }
+      >
+        <styled.div
+          sx={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+          theme={
+            Object {
+              "buttons": Object {
+                "primary": Object {
+                  "bg": "buttonBg",
+                  "borderRadius": "default",
+                  "color": "buttonText",
+                  "cursor": "pointer",
+                  "fontFamily": "heading",
+                  "fontSize": Array [
+                    1,
+                    1,
+                    2,
+                  ],
+                  "letterSpacing": "button",
+                  "px": 4,
+                  "py": 2,
+                },
+                "secondary": Object {
+                  "px": 3,
+                  "variant": "buttons.primary",
+                },
+              },
+              "colors": Object {
+                "appBar": "#000",
+                "background": "#E8EAED",
+                "borderColor": "#E5E9F2",
+                "buttonBg": "#000",
+                "buttonText": "#FFE300",
+                "detailLabel": "#4E5B6E",
+                "detailValue": "#4BD5EE",
+                "divider": "#000",
+                "error": "#DC143C",
+                "inputBg": "#EFF2F7",
+                "inputBorder": "#E5E9F2",
+                "inputColor": "#3C4858",
+                "link": "#4BD5EE",
+                "logo": "#FFE300",
+                "modes": Object {
+                  "dark": Object {
+                    "appBar": "#333",
+                    "background": "#000",
+                    "borderColor": "#3C4858",
+                    "buttonBg": "#4BD5EE",
+                    "detailLabel": "#4BD5EE",
+                    "detailValue": "#FFE300",
+                    "divider": "#999",
+                    "inputBg": "#fff",
+                    "inputBorder": "#3C4858",
+                    "inputColor": "#273444",
+                    "logo": "#FFE300",
+                    "muted": "#333",
+                    "primary": "#FFE300",
+                    "secondary": "#4BD5EE",
+                    "subHeading": "#4BD5EE",
+                    "text": "#abb1ba",
+                  },
+                },
+                "muted": "#fff",
+                "primary": "#4BD5EE",
+                "secondary": "#FFE300",
+                "subHeading": "#4E5B6E",
+                "text": "#4E5B6E",
+              },
+              "fontSizes": Array [
+                16,
+                18,
+                20,
+                26,
+                32,
+                36,
+                72,
+                84,
+              ],
+              "fontWeights": Object {
+                "body": 400,
+                "heading": 800,
+              },
+              "fonts": Object {
+                "body": "Helvetica",
+                "heading": "starwars",
+                "monospace": "Menlo, monospace",
+              },
+              "initialColorMode": "light",
+              "letterSpacings": Object {
+                "body": 0.1,
+                "button": 2,
+                "heading": 1.2,
+              },
+              "lineHeights": Object {
+                "body": 1.2,
+                "heading": 1,
+              },
+              "radii": Object {
+                "circle": 99999,
+                "default": 8,
+              },
+              "space": Array [
+                0,
+                4,
+                12,
+                16,
+                32,
+                64,
+                128,
+                256,
+              ],
+              "text": Object {
+                "body": Object {
+                  "fontFamily": "body",
+                  "fontSize": Array [
+                    1,
+                    null,
+                    0,
+                  ],
+                  "letterSpacing": "body",
+                  "lineHeight": "body",
+                },
+                "error": Object {
+                  "color": "error",
+                  "fontSize": 2,
+                  "variant": "text.body",
+                },
+                "h1": Object {
+                  "fontSize": Array [
+                    5,
+                    null,
+                    4,
+                  ],
+                  "variant": "text.heading",
+                },
+                "h2": Object {
+                  "fontSize": Array [
+                    4,
+                    null,
+                    3,
+                  ],
+                  "variant": "text.heading",
+                },
+                "h3": Object {
+                  "fontSize": Array [
+                    2,
+                    2,
+                    1,
+                  ],
+                  "variant": "text.heading",
+                },
+                "heading": Object {
+                  "color": "primary",
+                  "fontFamily": "heading",
+                  "fontWeight": "heading",
+                  "letterSpacing": "heading",
+                  "lineHeight": "heading",
+                },
+                "link": Object {
+                  "color": "link",
+                  "cursor": "pointer",
+                  "variant": "text.body",
+                },
+                "logo": Object {
+                  "large": Object {
+                    "color": "logo",
+                    "fontSize": 7,
+                    "variant": "text.heading",
+                  },
+                  "small": Object {
+                    "color": "logo",
+                    "fontSize": 4,
+                    "variant": "text.heading",
+                  },
+                },
+                "sub": Object {
+                  "color": "subHeading",
+                  "fontSize": Array [
+                    2,
+                    2,
+                    3,
+                  ],
+                  "variant": "text.heading",
+                },
+              },
+              "variants": Object {
+                "card": Object {
+                  "bg": "muted",
+                  "border": "1px solid",
+                  "borderColor": "borderColor",
+                  "borderRadius": "default",
+                  "color": "text",
+                  "overflow": "hidden",
+                },
+                "content": Object {
+                  "bg": "background",
+                  "m": "auto",
+                  "p": 4,
+                  "width": Array [
+                    400,
+                    600,
+                    1000,
+                  ],
+                },
+                "fitContent": Object {
+                  "maxwidth": "740px",
+                  "variant": "variants.container",
+                },
+              },
+            }
+          }
+          variant="card"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "Jqmgy",
+                  "rules": Array [
+                    "box-sizing: border-box;",
+                    "margin: 0;",
+                    "min-width: 0;",
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            sx={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            theme={
+              Object {
+                "buttons": Object {
+                  "primary": Object {
+                    "bg": "buttonBg",
+                    "borderRadius": "default",
+                    "color": "buttonText",
+                    "cursor": "pointer",
+                    "fontFamily": "heading",
+                    "fontSize": Array [
+                      1,
+                      1,
+                      2,
+                    ],
+                    "letterSpacing": "button",
+                    "px": 4,
+                    "py": 2,
+                  },
+                  "secondary": Object {
+                    "px": 3,
+                    "variant": "buttons.primary",
+                  },
+                },
+                "colors": Object {
+                  "appBar": "#000",
+                  "background": "#E8EAED",
+                  "borderColor": "#E5E9F2",
+                  "buttonBg": "#000",
+                  "buttonText": "#FFE300",
+                  "detailLabel": "#4E5B6E",
+                  "detailValue": "#4BD5EE",
+                  "divider": "#000",
+                  "error": "#DC143C",
+                  "inputBg": "#EFF2F7",
+                  "inputBorder": "#E5E9F2",
+                  "inputColor": "#3C4858",
+                  "link": "#4BD5EE",
+                  "logo": "#FFE300",
+                  "modes": Object {
+                    "dark": Object {
+                      "appBar": "#333",
+                      "background": "#000",
+                      "borderColor": "#3C4858",
+                      "buttonBg": "#4BD5EE",
+                      "detailLabel": "#4BD5EE",
+                      "detailValue": "#FFE300",
+                      "divider": "#999",
+                      "inputBg": "#fff",
+                      "inputBorder": "#3C4858",
+                      "inputColor": "#273444",
+                      "logo": "#FFE300",
+                      "muted": "#333",
+                      "primary": "#FFE300",
+                      "secondary": "#4BD5EE",
+                      "subHeading": "#4BD5EE",
+                      "text": "#abb1ba",
+                    },
+                  },
+                  "muted": "#fff",
+                  "primary": "#4BD5EE",
+                  "secondary": "#FFE300",
+                  "subHeading": "#4E5B6E",
+                  "text": "#4E5B6E",
+                },
+                "fontSizes": Array [
+                  16,
+                  18,
+                  20,
+                  26,
+                  32,
+                  36,
+                  72,
+                  84,
+                ],
+                "fontWeights": Object {
+                  "body": 400,
+                  "heading": 800,
+                },
+                "fonts": Object {
+                  "body": "Helvetica",
+                  "heading": "starwars",
+                  "monospace": "Menlo, monospace",
+                },
+                "initialColorMode": "light",
+                "letterSpacings": Object {
+                  "body": 0.1,
+                  "button": 2,
+                  "heading": 1.2,
+                },
+                "lineHeights": Object {
+                  "body": 1.2,
+                  "heading": 1,
+                },
+                "radii": Object {
+                  "circle": 99999,
+                  "default": 8,
+                },
+                "space": Array [
+                  0,
+                  4,
+                  12,
+                  16,
+                  32,
+                  64,
+                  128,
+                  256,
+                ],
+                "text": Object {
+                  "body": Object {
+                    "fontFamily": "body",
+                    "fontSize": Array [
+                      1,
+                      null,
+                      0,
+                    ],
+                    "letterSpacing": "body",
+                    "lineHeight": "body",
+                  },
+                  "error": Object {
+                    "color": "error",
+                    "fontSize": 2,
+                    "variant": "text.body",
+                  },
+                  "h1": Object {
+                    "fontSize": Array [
+                      5,
+                      null,
+                      4,
+                    ],
+                    "variant": "text.heading",
+                  },
+                  "h2": Object {
+                    "fontSize": Array [
+                      4,
+                      null,
+                      3,
+                    ],
+                    "variant": "text.heading",
+                  },
+                  "h3": Object {
+                    "fontSize": Array [
+                      2,
+                      2,
+                      1,
+                    ],
+                    "variant": "text.heading",
+                  },
+                  "heading": Object {
+                    "color": "primary",
+                    "fontFamily": "heading",
+                    "fontWeight": "heading",
+                    "letterSpacing": "heading",
+                    "lineHeight": "heading",
+                  },
+                  "link": Object {
+                    "color": "link",
+                    "cursor": "pointer",
+                    "variant": "text.body",
+                  },
+                  "logo": Object {
+                    "large": Object {
+                      "color": "logo",
+                      "fontSize": 7,
+                      "variant": "text.heading",
+                    },
+                    "small": Object {
+                      "color": "logo",
+                      "fontSize": 4,
+                      "variant": "text.heading",
+                    },
+                  },
+                  "sub": Object {
+                    "color": "subHeading",
+                    "fontSize": Array [
+                      2,
+                      2,
+                      3,
+                    ],
+                    "variant": "text.heading",
+                  },
+                },
+                "variants": Object {
+                  "card": Object {
+                    "bg": "muted",
+                    "border": "1px solid",
+                    "borderColor": "borderColor",
+                    "borderRadius": "default",
+                    "color": "text",
+                    "overflow": "hidden",
+                  },
+                  "content": Object {
+                    "bg": "background",
+                    "m": "auto",
+                    "p": 4,
+                    "width": Array [
+                      400,
+                      600,
+                      1000,
+                    ],
+                  },
+                  "fitContent": Object {
+                    "maxwidth": "740px",
+                    "variant": "variants.container",
+                  },
+                },
+              }
+            }
+            variant="card"
+          >
+            <div
+              className="sc-bdVaJa Jqmgy"
+            >
+              <FiLogOut
+                color="#4BD5EE"
+                style={
+                  Object {
+                    "justifyContent": "center",
+                    "padding": 8,
+                    "verticalAlign": "middle",
+                  }
+                }
+              >
+                <IconBase
+                  attr={
+                    Object {
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "strokeLinecap": "round",
+                      "strokeLinejoin": "round",
+                      "strokeWidth": "2",
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  color="#4BD5EE"
+                  style={
+                    Object {
+                      "justifyContent": "center",
+                      "padding": 8,
+                      "verticalAlign": "middle",
+                    }
+                  }
+                >
+                  <svg
+                    color="#4BD5EE"
+                    fill="none"
+                    height="1em"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    style={
+                      Object {
+                        "color": "#4BD5EE",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "verticalAlign": "middle",
+                      }
+                    }
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+                      key="0"
+                    />
+                    <polyline
+                      key="1"
+                      points="16 17 21 12 16 7"
+                    />
+                    <line
+                      key="2"
+                      x1="21"
+                      x2="9"
+                      y1="12"
+                      y2="12"
+                    />
+                  </svg>
+                </IconBase>
+              </FiLogOut>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </Logout>
+    </WithTheme(Logout)>
+    <WithTheme(GlobalStyleComponent)>
+      <GlobalStyleComponent
+        theme={
+          Object {
+            "buttons": Object {
+              "primary": Object {
+                "bg": "buttonBg",
+                "borderRadius": "default",
+                "color": "buttonText",
+                "cursor": "pointer",
+                "fontFamily": "heading",
+                "fontSize": Array [
+                  1,
+                  1,
+                  2,
+                ],
+                "letterSpacing": "button",
+                "px": 4,
+                "py": 2,
+              },
+              "secondary": Object {
+                "px": 3,
+                "variant": "buttons.primary",
+              },
+            },
+            "colors": Object {
+              "appBar": "#000",
+              "background": "#E8EAED",
+              "borderColor": "#E5E9F2",
+              "buttonBg": "#000",
+              "buttonText": "#FFE300",
+              "detailLabel": "#4E5B6E",
+              "detailValue": "#4BD5EE",
+              "divider": "#000",
+              "error": "#DC143C",
+              "inputBg": "#EFF2F7",
+              "inputBorder": "#E5E9F2",
+              "inputColor": "#3C4858",
+              "link": "#4BD5EE",
+              "logo": "#FFE300",
+              "modes": Object {
+                "dark": Object {
+                  "appBar": "#333",
+                  "background": "#000",
+                  "borderColor": "#3C4858",
+                  "buttonBg": "#4BD5EE",
+                  "detailLabel": "#4BD5EE",
+                  "detailValue": "#FFE300",
+                  "divider": "#999",
+                  "inputBg": "#fff",
+                  "inputBorder": "#3C4858",
+                  "inputColor": "#273444",
+                  "logo": "#FFE300",
+                  "muted": "#333",
+                  "primary": "#FFE300",
+                  "secondary": "#4BD5EE",
+                  "subHeading": "#4BD5EE",
+                  "text": "#abb1ba",
+                },
+              },
+              "muted": "#fff",
+              "primary": "#4BD5EE",
+              "secondary": "#FFE300",
+              "subHeading": "#4E5B6E",
+              "text": "#4E5B6E",
+            },
+            "fontSizes": Array [
+              16,
+              18,
+              20,
+              26,
+              32,
+              36,
+              72,
+              84,
+            ],
+            "fontWeights": Object {
+              "body": 400,
+              "heading": 800,
+            },
+            "fonts": Object {
+              "body": "Helvetica",
+              "heading": "starwars",
+              "monospace": "Menlo, monospace",
+            },
+            "initialColorMode": "light",
+            "letterSpacings": Object {
+              "body": 0.1,
+              "button": 2,
+              "heading": 1.2,
+            },
+            "lineHeights": Object {
+              "body": 1.2,
+              "heading": 1,
+            },
+            "radii": Object {
+              "circle": 99999,
+              "default": 8,
+            },
+            "space": Array [
+              0,
+              4,
+              12,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "text": Object {
+              "body": Object {
+                "fontFamily": "body",
+                "fontSize": Array [
+                  1,
+                  null,
+                  0,
+                ],
+                "letterSpacing": "body",
+                "lineHeight": "body",
+              },
+              "error": Object {
+                "color": "error",
+                "fontSize": 2,
+                "variant": "text.body",
+              },
+              "h1": Object {
+                "fontSize": Array [
+                  5,
+                  null,
+                  4,
+                ],
+                "variant": "text.heading",
+              },
+              "h2": Object {
+                "fontSize": Array [
+                  4,
+                  null,
+                  3,
+                ],
+                "variant": "text.heading",
+              },
+              "h3": Object {
+                "fontSize": Array [
+                  2,
+                  2,
+                  1,
+                ],
+                "variant": "text.heading",
+              },
+              "heading": Object {
+                "color": "primary",
+                "fontFamily": "heading",
+                "fontWeight": "heading",
+                "letterSpacing": "heading",
+                "lineHeight": "heading",
+              },
+              "link": Object {
+                "color": "link",
+                "cursor": "pointer",
+                "variant": "text.body",
+              },
+              "logo": Object {
+                "large": Object {
+                  "color": "logo",
+                  "fontSize": 7,
+                  "variant": "text.heading",
+                },
+                "small": Object {
+                  "color": "logo",
+                  "fontSize": 4,
+                  "variant": "text.heading",
+                },
+              },
+              "sub": Object {
+                "color": "subHeading",
+                "fontSize": Array [
+                  2,
+                  2,
+                  3,
+                ],
+                "variant": "text.heading",
+              },
+            },
+            "variants": Object {
+              "card": Object {
+                "bg": "muted",
+                "border": "1px solid",
+                "borderColor": "borderColor",
+                "borderRadius": "default",
+                "color": "text",
+                "overflow": "hidden",
+              },
+              "content": Object {
+                "bg": "background",
+                "m": "auto",
+                "p": 4,
+                "width": Array [
+                  400,
+                  600,
+                  1000,
+                ],
+              },
+              "fitContent": Object {
+                "maxwidth": "740px",
+                "variant": "variants.container",
+              },
+            },
+          }
+        }
+      />
+    </WithTheme(GlobalStyleComponent)>
+  </ThemeProvider>
+</_default>
+`;

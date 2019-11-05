@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCard Component should match snapshot 1`] = `
+<ForwardRef>
+  <styled.div
+    p={3}
+  >
+    <ForwardRef
+      pb={2}
+      textAlign="center"
+      variant="h3"
+    >
+      title
+    </ForwardRef>
+    <ForwardRef
+      pb={3}
+      src="test.png"
+      width={1}
+    />
+    <DetailList
+      data={
+        Array [
+          Object {
+            "field": "foo",
+            "value": "bar",
+          },
+        ]
+      }
+    />
+  </styled.div>
+</ForwardRef>
+`;

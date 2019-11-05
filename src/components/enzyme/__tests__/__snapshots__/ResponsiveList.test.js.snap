@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResponsiveList Component should match snapshot when hasMore is on 1`] = `
+<styled.div>
+  <ForwardRef>
+    <div />
+    <div />
+  </ForwardRef>
+  <styled.div
+    py={3}
+    textAlign="center"
+  >
+    <ForwardRef
+      variant="secondary"
+    >
+      Load More
+    </ForwardRef>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`ResponsiveList Component smoke test 1`] = `
+<styled.div>
+  <ForwardRef>
+    <div />
+    <div />
+  </ForwardRef>
+</styled.div>
+`;

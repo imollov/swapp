@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EpisodePreview Component smoke test 1`] = `
+<styled.div
+  sx={
+    Object {
+      "backgroundImage": "url(test.png)",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+      "flexShrink": 0,
+    }
+  }
+/>
+`;

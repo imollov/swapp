@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm Component should match snapshot with error message 1`] = `
+<styled.div
+  as="form"
+  onSubmit={[Function]}
+  p={4}
+>
+  <styled.div>
+    <ForwardRef
+      variant="error"
+    >
+      error
+    </ForwardRef>
+  </styled.div>
+  <styled.div
+    my={3}
+  >
+    <Styled(Component)
+      id="email"
+      name="email"
+      onChange={[Function]}
+      placeholder="email"
+      value=""
+    />
+  </styled.div>
+  <styled.div
+    my={3}
+  >
+    <Styled(Component)
+      id="password"
+      name="password"
+      onChange={[Function]}
+      placeholder="password"
+      type="password"
+      value=""
+    />
+  </styled.div>
+  <styled.div
+    textAlign="right"
+  >
+    <ForwardRef
+      variant="primary"
+    >
+      Login
+    </ForwardRef>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`LoginForm Component smoke test 1`] = `
+<styled.div
+  as="form"
+  onSubmit={[Function]}
+  p={4}
+>
+  <styled.div
+    my={3}
+  >
+    <Styled(Component)
+      id="email"
+      name="email"
+      onChange={[Function]}
+      placeholder="email"
+      value=""
+    />
+  </styled.div>
+  <styled.div
+    my={3}
+  >
+    <Styled(Component)
+      id="password"
+      name="password"
+      onChange={[Function]}
+      placeholder="password"
+      type="password"
+      value=""
+    />
+  </styled.div>
+  <styled.div
+    textAlign="right"
+  >
+    <ForwardRef
+      variant="primary"
+    >
+      Login
+    </ForwardRef>
+  </styled.div>
+</styled.div>
+`;
