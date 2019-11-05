@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+
 import { Box, Button, Text } from 'rebass/styled-components'
 import StyledInput from './StyledInput'
 
-export default ({ onSubmit, errorMsg, ...rest }) => {
+const LoginForm = ({ onSubmit, errorMsg, ...rest }) => {
   const [state, setState] = useState({
     email: '',
     password: '',
@@ -48,3 +50,10 @@ export default ({ onSubmit, errorMsg, ...rest }) => {
     </Box>
   )
 }
+
+LoginForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  errorMsg: PropTypes.string,
+}
+
+export default LoginForm

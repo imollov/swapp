@@ -2,7 +2,7 @@ import React from 'react'
 
 import EpisodePreview from '../pages/episodes/components/Preview'
 import EpisodeBanner from '../pages/episodes/components/Banner'
-import EpisodeInfo from '../pages/episodes/components/Info'
+import EpisodeContent from '../pages/episodes/components/Content'
 import InfoCard from '../components/InfoCard'
 
 import ThemeProvider from '../components/ThemeProvider'
@@ -58,13 +58,13 @@ export const Banner = () => {
 
 export const Info = () => {
   const details = [
-    ['Director', episode1.director],
-    ['Release Date', episode1.releaseDate],
+    { field: 'Director', value: episode1.director },
+    { field: 'Release Date', value: episode1.releaseDate },
   ]
   return (
     <ThemeProvider>
       <ThemedBox maxWidth={940}>
-        <EpisodeInfo info={episode1.openingCrawl} details={details} />
+        <EpisodeContent info={episode1.openingCrawl} details={details} />
       </ThemedBox>
     </ThemeProvider>
   )
@@ -81,10 +81,10 @@ export const InfoWithImage = () => {
     5: { node: person },
   } = persons
   const personDetails = [
-    ['Height', person.height],
-    ['Weight', person.mass],
-    ['Home world', person.homeworld.name],
-    ['Species', person.species.name],
+    { field: 'Height', value: person.height },
+    { field: 'Weight', value: person.mass },
+    { field: 'Home world', value: person.homeworld.name },
+    { field: 'Species', value: person.species.name },
   ]
   return (
     <ThemeProvider>

@@ -1,8 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { Flex, Heading, Box } from 'rebass/styled-components'
 import BackgroundImage from './BackgroundImage'
 
-export default ({ variant, img, title, ...rest }) => {
+const ImageCard = ({ variant, img, title, ...rest }) => {
   const imageWidth = variant === 'compact' ? 1 / 5 : 1 / 3
   return (
     <Flex {...rest} variant="card">
@@ -13,3 +15,11 @@ export default ({ variant, img, title, ...rest }) => {
     </Flex>
   )
 }
+
+ImageCard.propTypes = {
+  variant: PropTypes.oneOf(['compact', undefined]),
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+}
+
+export default ImageCard
