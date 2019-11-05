@@ -69,7 +69,7 @@ export default {
   },
   buttons: {
     primary: {
-      fontSize: 3,
+      fontSize: [1, 1, 2],
       fontFamily: 'heading',
       letterSpacing: 'button',
       color: 'buttonText',
@@ -81,7 +81,6 @@ export default {
     },
     secondary: {
       variant: 'buttons.primary',
-      fontSize: 1,
       px: 3,
     },
   },

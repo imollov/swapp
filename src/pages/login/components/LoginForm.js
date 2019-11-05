@@ -17,7 +17,7 @@ export default ({ onSubmit, errorMsg, ...rest }) => {
   }
 
   return (
-    <Box {...rest} px={5} py={4} as="form" onSubmit={handleSubmit}>
+    <Box {...rest} p={4} as="form" onSubmit={handleSubmit}>
       {errorMsg && (
         <Box>
           <Text variant="error">{errorMsg}</Text>
