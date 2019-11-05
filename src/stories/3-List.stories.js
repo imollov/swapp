@@ -25,7 +25,7 @@ export const ThreeColumns = () => {
       <ThemedBox>
         <ResponsiveList columns={[1, 2, 3]} hasMore={true}>
           {persons.map(({ node: p }) => (
-            <ImageCard img={p.image} title={p.name} height={100} />
+            <ImageCard key={p.name} img={p.image} title={p.name} height={100} />
           ))}
         </ResponsiveList>
       </ThemedBox>
@@ -47,6 +47,7 @@ export const OneColumn = () => {
         <ResponsiveList columns={[1, 1, 1]}>
           {starships.map(({ node: s }) => (
             <ImageCard
+              key={s.name}
               variant="compact"
               img={s.image}
               title={s.name}

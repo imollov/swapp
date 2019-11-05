@@ -1,7 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { Box } from 'rebass/styled-components'
 
-export default ({ src, ...rest }) => (
+const BackgroundImage = ({ src, ...rest }) => (
   <Box
     {...rest}
     sx={{
@@ -12,3 +14,9 @@ export default ({ src, ...rest }) => (
     }}
   />
 )
+
+BackgroundImage.propTypes = {
+  src: PropTypes.string.isRequired,
+}
+
+export default BackgroundImage
