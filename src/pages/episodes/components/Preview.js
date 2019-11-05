@@ -1,12 +1,13 @@
 import React from 'react'
-import { Card, Heading, Box, Text, Image } from 'rebass/styled-components'
+import { Flex, Heading, Box, Text } from 'rebass/styled-components'
+import BackgroundImage from '../../../components/BackgroundImage'
 
 export default ({ img, title, text, ...rest }) => (
-  <Card {...rest}>
-    <Image src={img} width={1} />
+  <Flex {...rest} variant="card" flexDirection="column">
+    <BackgroundImage src={img} height={256} />
     <Box p={3}>
       <Heading variant="h2">{title}</Heading>
       <Text variant="body">{text}</Text>
     </Box>
-  </Card>
+  </Flex>
 )

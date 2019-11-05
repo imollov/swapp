@@ -28,11 +28,13 @@ const {
 export const Preview = () => {
   return (
     <ThemeProvider>
-      <ThemedBox width={256}>
+      <ThemedBox>
         <EpisodePreview
           title={episode1.title}
           text={episode1.openingCrawl}
           img={episode1.image}
+          maxWidth={256}
+          m="auto"
         />
       </ThemedBox>
     </ThemeProvider>
@@ -43,7 +45,7 @@ export const Banner = () => {
   const title = `Star Wars: Episode ${episode1.episodeId}`
   return (
     <ThemeProvider>
-      <ThemedBox width={940}>
+      <ThemedBox maxWidth={940}>
         <EpisodeBanner
           title={episode1.title}
           subtitle={title}
@@ -61,7 +63,7 @@ export const Info = () => {
   ]
   return (
     <ThemeProvider>
-      <ThemedBox width={940}>
+      <ThemedBox maxWidth={940}>
         <EpisodeInfo info={episode1.openingCrawl} details={details} />
       </ThemedBox>
     </ThemeProvider>
@@ -86,7 +88,7 @@ export const InfoWithImage = () => {
   ]
   return (
     <ThemeProvider>
-      <ThemedBox width={470}>
+      <ThemedBox maxWidth={470}>
         <InfoCard title={person.name} img={person.image} data={personDetails} />
       </ThemedBox>
     </ThemeProvider>

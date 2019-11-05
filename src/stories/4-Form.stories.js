@@ -16,7 +16,7 @@ export const Login = () => {
 
   return (
     <ThemeProvider>
-      <ThemedBox width={580}>
+      <ThemedBox maxWidth={580}>
         <Box variant="card">
           <LoginForm
             errorMsg={errorMessage}

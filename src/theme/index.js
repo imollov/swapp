@@ -48,7 +48,7 @@ export default {
     heading: 'starwars',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [16, 18, 20, 26, 32, 64, 72, 84],
+  fontSizes: [16, 18, 20, 26, 32, 36, 72, 84],
   fontWeights: {
     body: 400,
     heading: 800,
@@ -69,7 +69,7 @@ export default {
   },
   buttons: {
     primary: {
-      fontSize: 3,
+      fontSize: [1, 1, 2],
       fontFamily: 'heading',
       letterSpacing: 'button',
       color: 'buttonText',
@@ -81,11 +81,14 @@ export default {
     },
     secondary: {
       variant: 'buttons.primary',
-      fontSize: 1,
       px: 3,
     },
   },
   variants: {
+    center: {
+      alignSelf: 'center',
+      textAlign: 'center',
+    },
     card: {
       bg: 'muted',
       color: 'text',
@@ -95,20 +98,19 @@ export default {
       overflow: 'hidden',
     },
     content: {
-      width: '970px',
+      width: [400, 600, 1000],
       bg: 'background',
-      mx: 'auto',
-      pt: '5',
-      pb: '6',
+      m: 'auto',
+      p: 4,
     },
     fitContent: {
       variant: 'variants.container',
-      width: '740px',
+      maxwidth: '740px',
     },
   },
   text: {
     body: {
-      fontSize: 0,
+      fontSize: [1, null, 0],
       fontFamily: 'body',
       lineHeight: 'body',
       letterSpacing: 'body',
@@ -122,11 +124,11 @@ export default {
     },
     h1: {
       variant: 'text.heading',
-      fontSize: 4,
+      fontSize: [5, null, 4],
     },
     h2: {
       variant: 'text.heading',
-      fontSize: 3,
+      fontSize: [4, null, 3],
       py: 3,
     },
     h3: {
@@ -134,8 +136,8 @@ export default {
       fontSize: 1,
     },
     sub: {
-      fontSize: 3,
       color: 'subHeading',
+      fontSize: 3,
     },
     logo: {
       small: {
