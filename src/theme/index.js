@@ -85,10 +85,6 @@ export default {
     },
   },
   variants: {
-    center: {
-      alignSelf: 'center',
-      textAlign: 'center',
-    },
     card: {
       bg: 'muted',
       color: 'text',
@@ -129,13 +125,13 @@ export default {
     h2: {
       variant: 'text.heading',
       fontSize: [4, null, 3],
-      py: 3,
     },
     h3: {
       variant: 'text.heading',
       fontSize: 1,
     },
     sub: {
+      variant: 'text.heading',
       color: 'subHeading',
       fontSize: 3,
     },
