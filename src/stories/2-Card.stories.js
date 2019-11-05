@@ -28,11 +28,13 @@ const {
 export const Preview = () => {
   return (
     <ThemeProvider>
-      <ThemedBox maxWidth={256}>
+      <ThemedBox>
         <EpisodePreview
           title={episode1.title}
           text={episode1.openingCrawl}
           img={episode1.image}
+          maxWidth={256}
+          m="auto"
         />
       </ThemedBox>
     </ThemeProvider>

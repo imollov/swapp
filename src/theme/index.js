@@ -48,7 +48,7 @@ export default {
     heading: 'starwars',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [16, 18, 20, 26, 32, 64, 72, 84],
+  fontSizes: [16, 18, 20, 26, 32, 36, 72, 84],
   fontWeights: {
     body: 400,
     heading: 800,
@@ -86,6 +86,10 @@ export default {
     },
   },
   variants: {
+    center: {
+      alignSelf: 'center',
+      textAlign: 'center',
+    },
     card: {
       bg: 'muted',
       color: 'text',
@@ -97,9 +101,8 @@ export default {
     content: {
       width: [400, 600, 1000],
       bg: 'background',
-      mx: 'auto',
-      pt: '5',
-      pb: '6',
+      m: 'auto',
+      p: 4,
     },
     fitContent: {
       variant: 'variants.container',
@@ -108,7 +111,7 @@ export default {
   },
   text: {
     body: {
-      fontSize: [2, 1, 0],
+      fontSize: [1, null, 0],
       fontFamily: 'body',
       lineHeight: 'body',
       letterSpacing: 'body',
@@ -122,11 +125,11 @@ export default {
     },
     h1: {
       variant: 'text.heading',
-      fontSize: 4,
+      fontSize: [5, null, 4],
     },
     h2: {
       variant: 'text.heading',
-      fontSize: [4, 4, 3],
+      fontSize: [4, null, 3],
       py: 3,
     },
     h3: {
@@ -134,8 +137,8 @@ export default {
       fontSize: 1,
     },
     sub: {
-      fontSize: 3,
       color: 'subHeading',
+      fontSize: 3,
     },
     logo: {
       small: {
