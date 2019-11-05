@@ -95,7 +95,7 @@ export default {
       overflow: 'hidden',
     },
     content: {
-      width: '970px',
+      width: [400, 600, 1000],
       bg: 'background',
       mx: 'auto',
       pt: '5',
@@ -103,12 +103,12 @@ export default {
     },
     fitContent: {
       variant: 'variants.container',
-      width: '740px',
+      maxwidth: '740px',
     },
   },
   text: {
     body: {
-      fontSize: 0,
+      fontSize: [2, 1, 0],
       fontFamily: 'body',
       lineHeight: 'body',
       letterSpacing: 'body',
@@ -126,7 +126,7 @@ export default {
     },
     h2: {
       variant: 'text.heading',
-      fontSize: 3,
+      fontSize: [4, 4, 3],
       py: 3,
     },
     h3: {
