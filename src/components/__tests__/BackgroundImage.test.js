@@ -1,13 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import EpisodePreview from '../../Preview'
+import BackgroundImage from '../BackgroundImage'
 
 describe('EpisodePreview Component', () => {
   it('smoke test', () => {
-    const wrapper = shallow(
-      <EpisodePreview img="image.png" title="title" text="text" />,
-    )
+    const wrapper = shallow(<BackgroundImage src="test.png" />)
 
     expect(wrapper).toMatchSnapshot()
   })

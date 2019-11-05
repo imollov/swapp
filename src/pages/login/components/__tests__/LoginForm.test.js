@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import LoginForm from '../../LoginForm'
-import ThemeProvider from '../../../../../components/ThemeProvider'
+import LoginForm from '../LoginForm'
+import ThemeProvider from '../../../../components/ThemeProvider'
 
 describe('LoginForm Component', () => {
   it('smoke test', () => {

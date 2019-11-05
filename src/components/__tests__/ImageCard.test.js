@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import ImageCard from '../../ImageCard'
+import ImageCard from '../ImageCard'
 
 describe('ImageCard Component', () => {
   it('smoke test', () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import AppBar from '../../AppBar'
+import AppBar from '..'
 
 describe('AppBar Component', () => {
   it('smoke test', () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import InfoCard from '../../InfoCard'
+import InfoCard from '../InfoCard'
 
 describe('InfoCard Component', () => {
   it('should match snapshot', () => {
