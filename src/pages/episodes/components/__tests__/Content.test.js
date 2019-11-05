@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import EpisodeContent from '../../Content'
+import EpisodeContent from '../Content'
 
 describe('EpisodeContent Component', () => {
   it('smoke test', () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import ResponsiveList from '../../ResponsiveList'
+import ResponsiveList from '../ResponsiveList'
 
 describe('ResponsiveList Component', () => {
   it('smoke test', () => {

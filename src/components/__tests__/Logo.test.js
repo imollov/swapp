@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import Logo from '../../Logo'
-import ThemeProvider from '../../ThemeProvider'
+import Logo from '../Logo'
+import ThemeProvider from '../ThemeProvider'
 
 describe('Logo Component', () => {
   it('smoke test', () => {

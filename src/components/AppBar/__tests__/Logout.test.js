@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import Logout from '../../AppBar/Logout'
+import Logout from '../Logout'
 import ThemeProvider from '../../ThemeProvider'
 
 describe('EpisodeBanner Component', () => {
