@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EpisodeContent Component smoke test 1`] = `
+<ForwardRef
+  variant="card"
+>
+  <styled.div
+    p={3}
+  >
+    <ForwardRef
+      pb={2}
+      variant="body"
+    >
+      info
+    </ForwardRef>
+    <DetailList
+      data={
+        Array [
+          Object {
+            "field": "foo",
+            "value": "bar",
+          },
+        ]
+      }
+    />
+  </styled.div>
+</ForwardRef>
+`;

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EpisodeBanner Component smoke test 1`] = `
+<Styled(styled.div)
+  flexDirection={
+    Array [
+      "column",
+      "row",
+      "row",
+    ]
+  }
+  variant="card"
+>
+  <ForwardRef
+    src="image.png"
+    width={
+      Array [
+        1,
+        null,
+        0.3333333333333333,
+      ]
+    }
+  />
+  <styled.div
+    m="auto"
+    p={4}
+    textAlign="center"
+    width={
+      Array [
+        1,
+        null,
+        0.6666666666666666,
+      ]
+    }
+  >
+    <ForwardRef
+      variant="h1"
+    >
+      subtitle
+    </ForwardRef>
+    <ForwardRef
+      pt={
+        Array [
+          3,
+          null,
+          0,
+        ]
+      }
+      variant="sub"
+    >
+      title
+    </ForwardRef>
+  </styled.div>
+</Styled(styled.div)>
+`;

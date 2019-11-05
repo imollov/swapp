@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppBar Component smoke test 1`] = `
+<Styled(styled.div)
+  bg="appBar"
+  height={60}
+>
+  <styled.div
+    alignSelf="center"
+    pl={4}
+    width={0.5}
+  >
+    <Logo
+      variant="logo.small"
+    />
+  </styled.div>
+  <Styled(styled.div)
+    alignSelf="center"
+    justifyContent="flex-end"
+    width={0.5}
+  >
+    <ForwardRef
+      alignSelf="center"
+      mr={3}
+      variant="link"
+    >
+      Episodes
+    </ForwardRef>
+    <ForwardRef
+      alignSelf="center"
+      mr={3}
+      variant="link"
+    >
+      Characters
+    </ForwardRef>
+    <WithTheme(Logout)
+      mr={3}
+    />
+  </Styled(styled.div)>
+</Styled(styled.div)>
+`;

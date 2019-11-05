@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailList Component should match snapshot 1`] = `
+Array [
+  <styled.div
+    key="foo"
+    pb={1}
+  >
+    <ForwardRef
+      as="a"
+      color="detailLabel"
+      variant="body"
+    >
+      foo: 
+    </ForwardRef>
+    <ForwardRef
+      as="a"
+      color="detailValue"
+      variant="body"
+    >
+      bar
+    </ForwardRef>
+  </styled.div>,
+  <styled.div
+    key="foo"
+    pb={1}
+  >
+    <ForwardRef
+      as="a"
+      color="detailLabel"
+      variant="body"
+    >
+      foo: 
+    </ForwardRef>
+    <ForwardRef
+      as="a"
+      color="detailValue"
+      variant="body"
+    >
+      bar
+    </ForwardRef>
+  </styled.div>,
+]
+`;

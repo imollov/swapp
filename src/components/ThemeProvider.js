@@ -5,9 +5,9 @@ import baseTheme from '../theme'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './GlobalStyles'
 
-const modes = ['light', 'dark']
+export const modes = ['light', 'dark']
 
-const getTheme = mode =>
+export const getTheme = mode =>
   merge({}, baseTheme, {
     colors: get(baseTheme.colors.modes, mode, baseTheme.colors),
   })
