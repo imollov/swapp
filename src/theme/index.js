@@ -21,6 +21,7 @@ export default {
     inputColor: '#3C4858',
     error: '#DC143C',
     logo: palette.yellow,
+    divider: palette.black,
     modes: {
       dark: {
         primary: palette.yellow,
@@ -38,6 +39,7 @@ export default {
         inputBorder: '#3C4858',
         inputColor: '#273444',
         logo: palette.yellow,
+        divider: '#999',
       },
     },
   },
