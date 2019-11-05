@@ -22,8 +22,8 @@ const {
 export const ThreeColumns = () => {
   return (
     <ThemeProvider>
-      <ThemedBox width={940}>
-        <ResponsiveList hasMore={true}>
+      <ThemedBox>
+        <ResponsiveList columns={[1, 2, 3]} hasMore={true}>
           {persons.map(({ node: p }) => (
             <ImageCard img={p.image} title={p.name} height={100} />
           ))}
@@ -43,8 +43,8 @@ const starships = edges.slice(0, 4)
 export const OneColumn = () => {
   return (
     <ThemeProvider>
-      <ThemedBox width={470}>
-        <ResponsiveList maxColumns={1}>
+      <ThemedBox maxWidth={470}>
+        <ResponsiveList columns={[1, 1, 1]}>
           {starships.map(({ node: s }) => (
             <ImageCard
               variant="compact"
