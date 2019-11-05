@@ -128,12 +128,12 @@ export default {
     },
     h3: {
       variant: 'text.heading',
-      fontSize: 1,
+      fontSize: [2, 2, 1],
     },
     sub: {
       variant: 'text.heading',
       color: 'subHeading',
-      fontSize: 3,
+      fontSize: [2, 2, 3],
     },
     logo: {
       small: {
