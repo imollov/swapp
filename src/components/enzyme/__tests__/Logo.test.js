@@ -24,9 +24,14 @@ describe('Logo Component', () => {
       </ThemeProvider>,
     )
 
-    const logo = wrapper.find('span')
+    const logo = wrapper.findWhere(
+      el => el.text() === 'SWAPP' && el.type() === 'span',
+    )
     logo.simulate('click')
 
+    expect(wrapper).toMatchSnapshot()
+
+    logo.simulate('click')
     expect(wrapper).toMatchSnapshot()
   })
 })
