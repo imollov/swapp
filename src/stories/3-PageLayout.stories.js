@@ -2,22 +2,13 @@ import React from 'react'
 
 import { Box } from 'rebass/styled-components'
 import ThemeProvider from '../components/ThemeProvider'
-import useThemeKnobs from './useThemeKnobs'
+import ThemedBox from './common/ThemedBox'
 
 import AppBar from '../components/AppBar'
 import Divider from '../components/Divider'
 
 export default {
   title: 'PageLayout',
-}
-
-const ContentBox = props => {
-  useThemeKnobs()
-  return (
-    <Box {...props} variant="content">
-      {props.children}
-    </Box>
-  )
 }
 
 export const Header = () => {
@@ -33,7 +24,7 @@ export const Header = () => {
 export const Line = () => {
   return (
     <ThemeProvider>
-      <ContentBox>
+      <ThemedBox>
         <Box m={5}>
           <Divider />
         </Box>
@@ -43,7 +34,7 @@ export const Line = () => {
         <Box m={5} width={1 / 4}>
           <Divider />
         </Box>
-      </ContentBox>
+      </ThemedBox>
     </ThemeProvider>
   )
 }

@@ -7,9 +7,8 @@ import ImageCard from '../components/ImageCard'
 import ResponsiveList from '../components/ResponsiveList'
 import InfoCard from '../components/InfoCard'
 
-import { Box } from 'rebass/styled-components'
 import ThemeProvider from '../components/ThemeProvider'
-import useThemeKnobs from './useThemeKnobs'
+import ThemedBox from './common/ThemedBox'
 
 export default {
   title: 'Card',
@@ -25,21 +24,12 @@ const details = [['Director', 'George Lucas'], ['Release Date', '1999-05-19']]
 const img =
   'https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg'
 
-const ContentBox = props => {
-  useThemeKnobs()
-  return (
-    <Box {...props} variant="content">
-      {props.children}
-    </Box>
-  )
-}
-
 export const Preview = () => {
   return (
     <ThemeProvider>
-      <ContentBox width={256}>
+      <ThemedBox width={256}>
         <EpisodePreview title={title} text={desc} img={img} />
-      </ContentBox>
+      </ThemedBox>
     </ThemeProvider>
   )
 }
@@ -47,9 +37,9 @@ export const Preview = () => {
 export const Banner = () => {
   return (
     <ThemeProvider>
-      <ContentBox width={940}>
+      <ThemedBox width={940}>
         <EpisodeBanner title={title} subtitle={subtitle} img={img} />
-      </ContentBox>
+      </ThemedBox>
     </ThemeProvider>
   )
 }
@@ -57,9 +47,9 @@ export const Banner = () => {
 export const Info = () => {
   return (
     <ThemeProvider>
-      <ContentBox width={940}>
+      <ThemedBox width={940}>
         <EpisodeInfo info={desc + desc + desc} details={details} />
-      </ContentBox>
+      </ThemedBox>
     </ThemeProvider>
   )
 }
@@ -81,13 +71,13 @@ const starshipImg =
 export const InfoWithImage = () => {
   return (
     <ThemeProvider>
-      <ContentBox width={470}>
+      <ThemedBox width={470}>
         <InfoCard
           title={characterName}
           img={characterImg}
           data={characterDetails}
         />
-      </ContentBox>
+      </ThemedBox>
     </ThemeProvider>
   )
 }
@@ -95,7 +85,7 @@ export const InfoWithImage = () => {
 export const List3Columns = () => {
   return (
     <ThemeProvider>
-      <ContentBox width={940}>
+      <ThemedBox width={940}>
         <ResponsiveList hasMore={true}>
           <ImageCard img={characterImg} title={characterName} height={100} />
           <ImageCard img={characterImg} title={characterName} height={100} />
@@ -103,7 +93,7 @@ export const List3Columns = () => {
           <ImageCard img={characterImg} title={characterName} height={100} />
           <ImageCard img={characterImg} title={characterName} height={100} />
         </ResponsiveList>
-      </ContentBox>
+      </ThemedBox>
     </ThemeProvider>
   )
 }
@@ -111,7 +101,7 @@ export const List3Columns = () => {
 export const List1Column = () => {
   return (
     <ThemeProvider>
-      <ContentBox width={470}>
+      <ThemedBox width={470}>
         <ResponsiveList maxColumns={1}>
           <ImageCard
             variant="compact"
@@ -132,7 +122,7 @@ export const List1Column = () => {
             height={60}
           />
         </ResponsiveList>
-      </ContentBox>
+      </ThemedBox>
     </ThemeProvider>
   )
 }
