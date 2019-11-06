@@ -25,6 +25,7 @@ export default () => {
               img={e.image}
               title={e.title}
               text={stripCrawl(e.openingCrawl)}
+              linkTo={`/episode/${e.id}`}
               m={4}
             />
           )

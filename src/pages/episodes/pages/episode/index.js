@@ -38,7 +38,13 @@ export default () => {
       <Content info={episode1.openingCrawl} details={details} mt={4} />
       <ResponsiveList columns={[1, null, 3]} hasMore={true} mt={4}>
         {persons.map(({ node: p }) => (
-          <ImageCard key={p.name} img={p.image} title={p.name} height={100} />
+          <ImageCard
+            key={p.name}
+            img={p.image}
+            title={p.name}
+            linkTo={`/character/${p.id}`}
+            height={100}
+          />
         ))}
       </ResponsiveList>
     </PageLayout>

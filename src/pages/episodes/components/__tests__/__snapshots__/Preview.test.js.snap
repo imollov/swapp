@@ -12,12 +12,16 @@ exports[`EpisodePreview Component smoke test 1`] = `
   <styled.div
     p={3}
   >
-    <ForwardRef
-      py={3}
-      variant="h2"
+    <Link
+      to="/"
     >
-      title
-    </ForwardRef>
+      <ForwardRef
+        py={3}
+        variant="h2"
+      >
+        title
+      </ForwardRef>
+    </Link>
     <ForwardRef
       variant="body"
     >

@@ -57,9 +57,11 @@ export default () => {
           <ResponsiveList columns={1}>
             {starships.map(({ node: s }) => (
               <ImageCard
-                variant="compact"
+                key={s.id}
                 img={s.image}
                 title={s.name}
+                linkTo={`/starship/${s.id}`}
+                variant="compact"
                 minHeight={60}
               />
             ))}

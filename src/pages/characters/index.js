@@ -18,9 +18,10 @@ export default () => {
       <ResponsiveList hasMore={true} columns={[1, null, 3]}>
         {persons.map(({ node: p }) => (
           <ImageCard
-            key={p.name}
+            key={p.id}
             img={p.image}
             title={p.name}
+            linkTo={`/character/${p.id}`}
             minHeight={100}
           />
         ))}

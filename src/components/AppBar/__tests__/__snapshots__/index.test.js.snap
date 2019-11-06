@@ -19,20 +19,34 @@ exports[`AppBar Component smoke test 1`] = `
     justifyContent="flex-end"
     width={0.5}
   >
-    <ForwardRef
+    <styled.div
       alignSelf="center"
       mr={3}
-      variant="link"
     >
-      Episodes
-    </ForwardRef>
-    <ForwardRef
+      <Link
+        to="/episodes"
+      >
+        <ForwardRef
+          variant="link"
+        >
+          Episodes
+        </ForwardRef>
+      </Link>
+    </styled.div>
+    <styled.div
       alignSelf="center"
       mr={3}
-      variant="link"
     >
-      Characters
-    </ForwardRef>
+      <Link
+        to="/characters"
+      >
+        <ForwardRef
+          variant="link"
+        >
+          Characters
+        </ForwardRef>
+      </Link>
+    </styled.div>
     <WithTheme(Logout)
       mr={3}
     />

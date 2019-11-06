@@ -13,6 +13,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.colors.background};
     margin: 0;
   }
+
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
 `
 
 export default withTheme(GlobalStyle)
