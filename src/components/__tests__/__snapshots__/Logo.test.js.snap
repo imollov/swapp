@@ -91,6 +91,7 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
           36,
           72,
           84,
+          110,
         ],
         "fontWeights": Object {
           "body": 400,
@@ -179,7 +180,11 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
           "logo": Object {
             "large": Object {
               "color": "logo",
-              "fontSize": 7,
+              "fontSize": Array [
+                6,
+                8,
+                8,
+              ],
               "variant": "text.heading",
             },
             "small": Object {
@@ -208,18 +213,17 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
             "overflow": "hidden",
           },
           "content": Object {
-            "bg": "background",
             "m": "auto",
             "p": 4,
             "width": Array [
               400,
-              600,
-              1000,
+              700,
+              1100,
             ],
           },
           "fitContent": Object {
-            "maxwidth": "740px",
-            "variant": "variants.container",
+            "maxWidth": 840,
+            "variant": "variants.content",
           },
         },
       }
@@ -391,6 +395,7 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
               36,
               72,
               84,
+              110,
             ],
             "fontWeights": Object {
               "body": 400,
@@ -479,7 +484,11 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
               "logo": Object {
                 "large": Object {
                   "color": "logo",
-                  "fontSize": 7,
+                  "fontSize": Array [
+                    6,
+                    8,
+                    8,
+                  ],
                   "variant": "text.heading",
                 },
                 "small": Object {
@@ -508,18 +517,17 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
                 "overflow": "hidden",
               },
               "content": Object {
-                "bg": "background",
                 "m": "auto",
                 "p": 4,
                 "width": Array [
                   400,
-                  600,
-                  1000,
+                  700,
+                  1100,
                 ],
               },
               "fitContent": Object {
-                "maxwidth": "740px",
-                "variant": "variants.container",
+                "maxWidth": 840,
+                "variant": "variants.content",
               },
             },
           }
@@ -606,6 +614,7 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
           36,
           72,
           84,
+          110,
         ],
         "fontWeights": Object {
           "body": 400,
@@ -694,7 +703,11 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
           "logo": Object {
             "large": Object {
               "color": "logo",
-              "fontSize": 7,
+              "fontSize": Array [
+                6,
+                8,
+                8,
+              ],
               "variant": "text.heading",
             },
             "small": Object {
@@ -723,18 +736,17 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
             "overflow": "hidden",
           },
           "content": Object {
-            "bg": "background",
             "m": "auto",
             "p": 4,
             "width": Array [
               400,
-              600,
-              1000,
+              700,
+              1100,
             ],
           },
           "fitContent": Object {
-            "maxwidth": "740px",
-            "variant": "variants.container",
+            "maxWidth": 840,
+            "variant": "variants.content",
           },
         },
       }
@@ -906,6 +918,7 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
               36,
               72,
               84,
+              110,
             ],
             "fontWeights": Object {
               "body": 400,
@@ -994,7 +1007,11 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
               "logo": Object {
                 "large": Object {
                   "color": "logo",
-                  "fontSize": 7,
+                  "fontSize": Array [
+                    6,
+                    8,
+                    8,
+                  ],
                   "variant": "text.heading",
                 },
                 "small": Object {
@@ -1023,18 +1040,17 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
                 "overflow": "hidden",
               },
               "content": Object {
-                "bg": "background",
                 "m": "auto",
                 "p": 4,
                 "width": Array [
                   400,
-                  600,
-                  1000,
+                  700,
+                  1100,
                 ],
               },
               "fitContent": Object {
-                "maxwidth": "740px",
-                "variant": "variants.container",
+                "maxWidth": 840,
+                "variant": "variants.content",
               },
             },
           }

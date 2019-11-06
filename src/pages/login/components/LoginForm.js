@@ -19,7 +19,7 @@ const LoginForm = ({ onSubmit, errorMsg, ...rest }) => {
   }
 
   return (
-    <Box {...rest} p={4} as="form" onSubmit={handleSubmit}>
+    <Box {...rest} as="form" onSubmit={handleSubmit}>
       {errorMsg && (
         <Box>
           <Text variant="error">{errorMsg}</Text>

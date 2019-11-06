@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${props => props.theme.colors.background};
+    margin: 0;
   }
 `
 

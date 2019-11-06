@@ -1,8 +1,8 @@
 import React from 'react'
 
 import EpisodePreview from '../pages/episodes/components/Preview'
-import EpisodeBanner from '../pages/episodes/components/Banner'
-import EpisodeContent from '../pages/episodes/components/Content'
+import EpisodeBanner from '../pages/episodes/pages/episode/components/Banner'
+import EpisodeContent from '../pages/episodes/pages/episode/components/Content'
 import InfoCard from '../components/InfoCard'
 
 import ThemeProvider from '../components/ThemeProvider'
