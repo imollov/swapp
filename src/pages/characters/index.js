@@ -16,16 +16,14 @@ export default () => {
   return (
     <Box variant="content">
       <ResponsiveList hasMore={true} columns={[1, null, 3]}>
-        {persons.map(({ node: p }) => {
-          return (
-            <ImageCard
-              key={p.name}
-              img={p.image}
-              title={p.name}
-              minHeight={100}
-            />
-          )
-        })}
+        {persons.map(({ node: p }) => (
+          <ImageCard
+            key={p.name}
+            img={p.image}
+            title={p.name}
+            minHeight={100}
+          />
+        ))}
       </ResponsiveList>
     </Box>
   )
