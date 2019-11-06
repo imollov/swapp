@@ -13,11 +13,15 @@ exports[`ImageCard Component should match snapshot with variant 1`] = `
     p={2}
     textAlign="center"
   >
-    <ForwardRef
-      variant="h3"
+    <Link
+      to="/"
     >
-      title
-    </ForwardRef>
+      <ForwardRef
+        variant="h3"
+      >
+        title
+      </ForwardRef>
+    </Link>
   </styled.div>
 </Styled(styled.div)>
 `;
@@ -35,11 +39,15 @@ exports[`ImageCard Component smoke test 1`] = `
     p={2}
     textAlign="center"
   >
-    <ForwardRef
-      variant="h3"
+    <Link
+      to="/"
     >
-      title
-    </ForwardRef>
+      <ForwardRef
+        variant="h3"
+      >
+        title
+      </ForwardRef>
+    </Link>
   </styled.div>
 </Styled(styled.div)>
 `;

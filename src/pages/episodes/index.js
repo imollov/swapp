@@ -1,8 +1,8 @@
 import React from 'react'
-import { Box } from 'rebass/styled-components'
 
 import Preview from './components/Preview'
 import ResponsiveList from '../../components/ResponsiveList'
+import PageLayout from '../../components/PageLayout'
 
 import episodesData from '../../stories/data/episodes'
 
@@ -16,7 +16,7 @@ const stripCrawl = text => `${text.slice(0, 200)}...`
 
 export default () => {
   return (
-    <Box variant="content">
+    <PageLayout>
       <ResponsiveList columns={[1, null, 3]}>
         {episodes.map(({ node: e }) => {
           return (
@@ -25,11 +25,12 @@ export default () => {
               img={e.image}
               title={e.title}
               text={stripCrawl(e.openingCrawl)}
+              linkTo={`/episode/${e.id}`}
               m={4}
             />
           )
         })}
       </ResponsiveList>
-    </Box>
+    </PageLayout>
   )
 }

@@ -6,7 +6,7 @@ import EpisodePreview from '../Preview'
 describe('EpisodePreview Component', () => {
   it('smoke test', () => {
     const wrapper = shallow(
-      <EpisodePreview img="image.png" title="title" text="text" />,
+      <EpisodePreview img="image.png" title="title" text="text" linkTo="/" />,
     )
 
     expect(wrapper).toMatchSnapshot()

@@ -6,6 +6,7 @@ import InfoCard from '../../../../components/InfoCard'
 import ImageCard from '../../../../components/ImageCard'
 import ResponsiveList from '../../../../components/ResponsiveList'
 import Divider from '../../../../components/Divider'
+import PageLayout from '../../../../components/PageLayout'
 
 import personsData from '../../../../stories/data/persons'
 import starshipsData from '../../../../stories/data/starships'
@@ -35,7 +36,7 @@ export default () => {
     { field: 'Home World', value: character.homeworld.name },
   ]
   return (
-    <Box variant="fitContent">
+    <PageLayout variant="fitContent">
       <Heading variant="h1" textAlign="center" mb={4}>
         {character.name}
       </Heading>
@@ -56,15 +57,17 @@ export default () => {
           <ResponsiveList columns={1}>
             {starships.map(({ node: s }) => (
               <ImageCard
-                variant="compact"
+                key={s.id}
                 img={s.image}
                 title={s.name}
+                linkTo={`/starship/${s.id}`}
+                variant="compact"
                 minHeight={60}
               />
             ))}
           </ResponsiveList>
         </Box>
       </Tiles>
-    </Box>
+    </PageLayout>
   )
 }

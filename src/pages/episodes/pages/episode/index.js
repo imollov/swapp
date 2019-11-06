@@ -1,10 +1,10 @@
 import React from 'react'
-import { Box } from 'rebass/styled-components'
 
 import Banner from './components/Banner'
 import Content from './components/Content'
 import ResponsiveList from '../../../../components/ResponsiveList'
 import ImageCard from '../../../../components/ImageCard'
+import PageLayout from '../../../../components/PageLayout'
 
 import episodesData from '../../../../stories/data/episodes'
 import personsData from '../../../../stories/data/persons'
@@ -33,14 +33,20 @@ export default () => {
     { field: 'Release Date', value: episode1.releaseDate },
   ]
   return (
-    <Box variant="fitContent">
+    <PageLayout variant="fitContent">
       <Banner img={episode1.image} title={episode1.title} subtitle={title} />
       <Content info={episode1.openingCrawl} details={details} mt={4} />
       <ResponsiveList columns={[1, null, 3]} hasMore={true} mt={4}>
         {persons.map(({ node: p }) => (
-          <ImageCard key={p.name} img={p.image} title={p.name} height={100} />
+          <ImageCard
+            key={p.name}
+            img={p.image}
+            title={p.name}
+            linkTo={`/character/${p.id}`}
+            height={100}
+          />
         ))}
       </ResponsiveList>
-    </Box>
+    </PageLayout>
   )
 }
