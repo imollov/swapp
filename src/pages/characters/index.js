@@ -1,8 +1,8 @@
 import React from 'react'
-import { Box } from 'rebass/styled-components'
 
 import ImageCard from '../../components/ImageCard'
 import ResponsiveList from '../../components/ResponsiveList'
+import PageLayout from '../../components/PageLayout'
 
 import personsData from '../../stories/data/persons'
 
@@ -14,7 +14,7 @@ const {
 
 export default () => {
   return (
-    <Box variant="content">
+    <PageLayout>
       <ResponsiveList hasMore={true} columns={[1, null, 3]}>
         {persons.map(({ node: p }) => (
           <ImageCard
@@ -25,6 +25,6 @@ export default () => {
           />
         ))}
       </ResponsiveList>
-    </Box>
+    </PageLayout>
   )
 }

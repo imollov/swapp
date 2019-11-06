@@ -4,6 +4,7 @@ import { Box, Heading } from 'rebass/styled-components'
 
 import InfoCard from '../../components/InfoCard'
 import Divider from '../../components/Divider'
+import PageLayout from '../../components/PageLayout'
 
 import starshipsData from '../../stories/data/starships'
 
@@ -19,7 +20,7 @@ const {
 
 export default () => {
   return (
-    <Box variant="fitContent">
+    <PageLayout variant="fitContent">
       <Heading variant="h1" textAlign="center">
         {starship.name}
       </Heading>
@@ -42,6 +43,6 @@ export default () => {
           {/* Radar chart goes here... */}
         </Box>
       </Tiles>
-    </Box>
+    </PageLayout>
   )
 }
