@@ -76,6 +76,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
           36,
           72,
           84,
+          110,
         ],
         "fontWeights": Object {
           "body": 400,
@@ -164,7 +165,11 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
           "logo": Object {
             "large": Object {
               "color": "logo",
-              "fontSize": 7,
+              "fontSize": Array [
+                6,
+                8,
+                8,
+              ],
               "variant": "text.heading",
             },
             "small": Object {
@@ -197,7 +202,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
             "p": 4,
             "width": Array [
               400,
-              600,
+              700,
               1100,
             ],
           },
@@ -287,6 +292,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
               36,
               72,
               84,
+              110,
             ],
             "fontWeights": Object {
               "body": 400,
@@ -375,7 +381,11 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
               "logo": Object {
                 "large": Object {
                   "color": "logo",
-                  "fontSize": 7,
+                  "fontSize": Array [
+                    6,
+                    8,
+                    8,
+                  ],
                   "variant": "text.heading",
                 },
                 "small": Object {
@@ -408,7 +418,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 "p": 4,
                 "width": Array [
                   400,
-                  600,
+                  700,
                   1100,
                 ],
               },
@@ -500,6 +510,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 36,
                 72,
                 84,
+                110,
               ],
               "fontWeights": Object {
                 "body": 400,
@@ -588,7 +599,11 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 "logo": Object {
                   "large": Object {
                     "color": "logo",
-                    "fontSize": 7,
+                    "fontSize": Array [
+                      6,
+                      8,
+                      8,
+                    ],
                     "variant": "text.heading",
                   },
                   "small": Object {
@@ -621,7 +636,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                   "p": 4,
                   "width": Array [
                     400,
-                    600,
+                    700,
                     1100,
                   ],
                 },
@@ -744,6 +759,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                   36,
                   72,
                   84,
+                  110,
                 ],
                 "fontWeights": Object {
                   "body": 400,
@@ -832,7 +848,11 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                   "logo": Object {
                     "large": Object {
                       "color": "logo",
-                      "fontSize": 7,
+                      "fontSize": Array [
+                        6,
+                        8,
+                        8,
+                      ],
                       "variant": "text.heading",
                     },
                     "small": Object {
@@ -865,7 +885,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                     "p": 4,
                     "width": Array [
                       400,
-                      600,
+                      700,
                       1100,
                     ],
                   },
@@ -1029,6 +1049,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
               36,
               72,
               84,
+              110,
             ],
             "fontWeights": Object {
               "body": 400,
@@ -1117,7 +1138,11 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
               "logo": Object {
                 "large": Object {
                   "color": "logo",
-                  "fontSize": 7,
+                  "fontSize": Array [
+                    6,
+                    8,
+                    8,
+                  ],
                   "variant": "text.heading",
                 },
                 "small": Object {
@@ -1150,7 +1175,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 "p": 4,
                 "width": Array [
                   400,
-                  600,
+                  700,
                   1100,
                 ],
               },
@@ -1243,6 +1268,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
           36,
           72,
           84,
+          110,
         ],
         "fontWeights": Object {
           "body": 400,
@@ -1331,7 +1357,11 @@ exports[`EpisodeBanner Component smoke test 1`] = `
           "logo": Object {
             "large": Object {
               "color": "logo",
-              "fontSize": 7,
+              "fontSize": Array [
+                6,
+                8,
+                8,
+              ],
               "variant": "text.heading",
             },
             "small": Object {
@@ -1364,7 +1394,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
             "p": 4,
             "width": Array [
               400,
-              600,
+              700,
               1100,
             ],
           },
@@ -1451,6 +1481,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
               36,
               72,
               84,
+              110,
             ],
             "fontWeights": Object {
               "body": 400,
@@ -1539,7 +1570,11 @@ exports[`EpisodeBanner Component smoke test 1`] = `
               "logo": Object {
                 "large": Object {
                   "color": "logo",
-                  "fontSize": 7,
+                  "fontSize": Array [
+                    6,
+                    8,
+                    8,
+                  ],
                   "variant": "text.heading",
                 },
                 "small": Object {
@@ -1572,7 +1607,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 "p": 4,
                 "width": Array [
                   400,
-                  600,
+                  700,
                   1100,
                 ],
               },
@@ -1663,6 +1698,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 36,
                 72,
                 84,
+                110,
               ],
               "fontWeights": Object {
                 "body": 400,
@@ -1751,7 +1787,11 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 "logo": Object {
                   "large": Object {
                     "color": "logo",
-                    "fontSize": 7,
+                    "fontSize": Array [
+                      6,
+                      8,
+                      8,
+                    ],
                     "variant": "text.heading",
                   },
                   "small": Object {
@@ -1784,7 +1824,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                   "p": 4,
                   "width": Array [
                     400,
-                    600,
+                    700,
                     1100,
                   ],
                 },
@@ -1906,6 +1946,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                   36,
                   72,
                   84,
+                  110,
                 ],
                 "fontWeights": Object {
                   "body": 400,
@@ -1994,7 +2035,11 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                   "logo": Object {
                     "large": Object {
                       "color": "logo",
-                      "fontSize": 7,
+                      "fontSize": Array [
+                        6,
+                        8,
+                        8,
+                      ],
                       "variant": "text.heading",
                     },
                     "small": Object {
@@ -2027,7 +2072,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                     "p": 4,
                     "width": Array [
                       400,
-                      600,
+                      700,
                       1100,
                     ],
                   },
@@ -2191,6 +2236,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
               36,
               72,
               84,
+              110,
             ],
             "fontWeights": Object {
               "body": 400,
@@ -2279,7 +2325,11 @@ exports[`EpisodeBanner Component smoke test 1`] = `
               "logo": Object {
                 "large": Object {
                   "color": "logo",
-                  "fontSize": 7,
+                  "fontSize": Array [
+                    6,
+                    8,
+                    8,
+                  ],
                   "variant": "text.heading",
                 },
                 "small": Object {
@@ -2312,7 +2362,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 "p": 4,
                 "width": Array [
                   400,
-                  600,
+                  700,
                   1100,
                 ],
               },

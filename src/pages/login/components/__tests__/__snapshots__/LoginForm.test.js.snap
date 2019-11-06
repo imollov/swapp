@@ -4,7 +4,6 @@ exports[`LoginForm Component should match snapshot with error message 1`] = `
 <styled.div
   as="form"
   onSubmit={[Function]}
-  p={4}
 >
   <styled.div>
     <ForwardRef
@@ -52,7 +51,6 @@ exports[`LoginForm Component smoke test 1`] = `
 <styled.div
   as="form"
   onSubmit={[Function]}
-  p={4}
 >
   <styled.div
     my={3}

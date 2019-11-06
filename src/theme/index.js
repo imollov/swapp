@@ -13,7 +13,7 @@ export default {
     heading: 'starwars',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [16, 18, 20, 26, 32, 36, 72, 84],
+  fontSizes: [16, 18, 20, 26, 32, 36, 72, 84, 110],
   fontWeights: {
     body: 400,
     heading: 800,
@@ -59,7 +59,7 @@ export default {
       overflow: 'hidden',
     },
     content: {
-      width: [400, 600, 1100],
+      width: [400, 700, 1100],
       m: 'auto',
       p: 4,
     },
@@ -108,7 +108,7 @@ export default {
       large: {
         variant: 'text.heading',
         color: 'logo',
-        fontSize: 7,
+        fontSize: [6, 8, 8],
       },
     },
     link: {
