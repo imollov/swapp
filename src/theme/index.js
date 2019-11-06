@@ -59,7 +59,7 @@ export default {
       overflow: 'hidden',
     },
     content: {
-      width: [400, 600, 1000],
+      width: [400, 600, 1100],
       m: 'auto',
       p: 4,
     },

@@ -213,7 +213,7 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
             "width": Array [
               400,
               600,
-              1000,
+              1100,
             ],
           },
           "fitContent": Object {
@@ -512,7 +512,7 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
                 "width": Array [
                   400,
                   600,
-                  1000,
+                  1100,
                 ],
               },
               "fitContent": Object {
@@ -726,7 +726,7 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
             "width": Array [
               400,
               600,
-              1000,
+              1100,
             ],
           },
           "fitContent": Object {
@@ -1025,7 +1025,7 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
                 "width": Array [
                   400,
                   600,
-                  1000,
+                  1100,
                 ],
               },
               "fitContent": Object {

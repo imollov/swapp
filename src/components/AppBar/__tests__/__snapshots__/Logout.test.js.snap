@@ -198,7 +198,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
             "width": Array [
               400,
               600,
-              1000,
+              1100,
             ],
           },
           "fitContent": Object {
@@ -409,7 +409,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 "width": Array [
                   400,
                   600,
-                  1000,
+                  1100,
                 ],
               },
               "fitContent": Object {
@@ -622,7 +622,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                   "width": Array [
                     400,
                     600,
-                    1000,
+                    1100,
                   ],
                 },
                 "fitContent": Object {
@@ -866,7 +866,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                     "width": Array [
                       400,
                       600,
-                      1000,
+                      1100,
                     ],
                   },
                   "fitContent": Object {
@@ -1151,7 +1151,7 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 "width": Array [
                   400,
                   600,
-                  1000,
+                  1100,
                 ],
               },
               "fitContent": Object {
@@ -1365,7 +1365,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
             "width": Array [
               400,
               600,
-              1000,
+              1100,
             ],
           },
           "fitContent": Object {
@@ -1573,7 +1573,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 "width": Array [
                   400,
                   600,
-                  1000,
+                  1100,
                 ],
               },
               "fitContent": Object {
@@ -1785,7 +1785,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                   "width": Array [
                     400,
                     600,
-                    1000,
+                    1100,
                   ],
                 },
                 "fitContent": Object {
@@ -2028,7 +2028,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                     "width": Array [
                       400,
                       600,
-                      1000,
+                      1100,
                     ],
                   },
                   "fitContent": Object {
@@ -2313,7 +2313,7 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 "width": Array [
                   400,
                   600,
-                  1000,
+                  1100,
                 ],
               },
               "fitContent": Object {
