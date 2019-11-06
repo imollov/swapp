@@ -11900,6 +11900,11 @@ react-sizeme@^2.6.7:
     shallowequal "^1.1.0"
     throttle-debounce "^2.1.0"
 
+react-svg-radar-chart@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-svg-radar-chart/-/react-svg-radar-chart-1.2.0.tgz#ed6b5e97896723eda28b9e34180b0c8d6ad13c72"
+  integrity sha512-C1t9rSIohx6vNBJ1GrZZ+XXq+I9Yshojdb8VTqwx5qmiwWY2PNL8fg1hS3naGUTZxw16kQLcvAVlUo07QaD+AQ==
+
 react-syntax-highlighter@^8.0.1:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-8.1.0.tgz#59103ff17a828a27ed7c8f035ae2558f09b6b78c"

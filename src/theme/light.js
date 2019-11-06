@@ -20,4 +20,6 @@ export default {
   error: '#DC143C',
   logo: palette.yellow,
   divider: palette.black,
+  radarShape: palette.yellow,
+  radarScale: '#333',
 }
