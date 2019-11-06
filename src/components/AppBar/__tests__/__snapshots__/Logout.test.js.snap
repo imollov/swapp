@@ -193,7 +193,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
             "overflow": "hidden",
           },
           "content": Object {
-            "bg": "background",
             "m": "auto",
             "p": 4,
             "width": Array [
@@ -203,8 +202,8 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
             ],
           },
           "fitContent": Object {
-            "maxwidth": "740px",
-            "variant": "variants.container",
+            "maxWidth": 840,
+            "variant": "variants.content",
           },
         },
       }
@@ -405,7 +404,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 "overflow": "hidden",
               },
               "content": Object {
-                "bg": "background",
                 "m": "auto",
                 "p": 4,
                 "width": Array [
@@ -415,8 +413,8 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 ],
               },
               "fitContent": Object {
-                "maxwidth": "740px",
-                "variant": "variants.container",
+                "maxWidth": 840,
+                "variant": "variants.content",
               },
             },
           }
@@ -619,7 +617,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                   "overflow": "hidden",
                 },
                 "content": Object {
-                  "bg": "background",
                   "m": "auto",
                   "p": 4,
                   "width": Array [
@@ -629,8 +626,8 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                   ],
                 },
                 "fitContent": Object {
-                  "maxwidth": "740px",
-                  "variant": "variants.container",
+                  "maxWidth": 840,
+                  "variant": "variants.content",
                 },
               },
             }
@@ -864,7 +861,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                     "overflow": "hidden",
                   },
                   "content": Object {
-                    "bg": "background",
                     "m": "auto",
                     "p": 4,
                     "width": Array [
@@ -874,8 +870,8 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                     ],
                   },
                   "fitContent": Object {
-                    "maxwidth": "740px",
-                    "variant": "variants.container",
+                    "maxWidth": 840,
+                    "variant": "variants.content",
                   },
                 },
               }
@@ -1150,7 +1146,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 "overflow": "hidden",
               },
               "content": Object {
-                "bg": "background",
                 "m": "auto",
                 "p": 4,
                 "width": Array [
@@ -1160,8 +1155,8 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 ],
               },
               "fitContent": Object {
-                "maxwidth": "740px",
-                "variant": "variants.container",
+                "maxWidth": 840,
+                "variant": "variants.content",
               },
             },
           }
@@ -1365,7 +1360,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
             "overflow": "hidden",
           },
           "content": Object {
-            "bg": "background",
             "m": "auto",
             "p": 4,
             "width": Array [
@@ -1375,8 +1369,8 @@ exports[`EpisodeBanner Component smoke test 1`] = `
             ],
           },
           "fitContent": Object {
-            "maxwidth": "740px",
-            "variant": "variants.container",
+            "maxWidth": 840,
+            "variant": "variants.content",
           },
         },
       }
@@ -1574,7 +1568,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 "overflow": "hidden",
               },
               "content": Object {
-                "bg": "background",
                 "m": "auto",
                 "p": 4,
                 "width": Array [
@@ -1584,8 +1577,8 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 ],
               },
               "fitContent": Object {
-                "maxwidth": "740px",
-                "variant": "variants.container",
+                "maxWidth": 840,
+                "variant": "variants.content",
               },
             },
           }
@@ -1787,7 +1780,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                   "overflow": "hidden",
                 },
                 "content": Object {
-                  "bg": "background",
                   "m": "auto",
                   "p": 4,
                   "width": Array [
@@ -1797,8 +1789,8 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                   ],
                 },
                 "fitContent": Object {
-                  "maxwidth": "740px",
-                  "variant": "variants.container",
+                  "maxWidth": 840,
+                  "variant": "variants.content",
                 },
               },
             }
@@ -2031,7 +2023,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                     "overflow": "hidden",
                   },
                   "content": Object {
-                    "bg": "background",
                     "m": "auto",
                     "p": 4,
                     "width": Array [
@@ -2041,8 +2032,8 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                     ],
                   },
                   "fitContent": Object {
-                    "maxwidth": "740px",
-                    "variant": "variants.container",
+                    "maxWidth": 840,
+                    "variant": "variants.content",
                   },
                 },
               }
@@ -2317,7 +2308,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 "overflow": "hidden",
               },
               "content": Object {
-                "bg": "background",
                 "m": "auto",
                 "p": 4,
                 "width": Array [
@@ -2327,8 +2317,8 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 ],
               },
               "fitContent": Object {
-                "maxwidth": "740px",
-                "variant": "variants.container",
+                "maxWidth": 840,
+                "variant": "variants.content",
               },
             },
           }

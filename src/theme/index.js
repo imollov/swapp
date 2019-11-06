@@ -60,13 +60,12 @@ export default {
     },
     content: {
       width: [400, 600, 1000],
-      bg: 'background',
       m: 'auto',
       p: 4,
     },
     fitContent: {
-      variant: 'variants.container',
-      maxwidth: '740px',
+      variant: 'variants.content',
+      maxWidth: 840,
     },
   },
   text: {

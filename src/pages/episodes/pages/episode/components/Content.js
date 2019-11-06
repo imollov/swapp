@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Card, Box, Text } from 'rebass/styled-components'
-import DetailList from '../../../components/DetailList'
+import DetailList from '../../../../../components/DetailList'
 
 const Content = ({ info, details, ...rest }) => (
   <Card {...rest} variant="card">
