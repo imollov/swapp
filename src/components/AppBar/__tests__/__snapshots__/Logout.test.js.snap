@@ -86,7 +86,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
           "heading": "starwars",
           "monospace": "Menlo, monospace",
         },
-        "initialColorMode": "light",
         "letterSpacings": Object {
           "body": 0.1,
           "button": 2,
@@ -299,7 +298,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
               "heading": "starwars",
               "monospace": "Menlo, monospace",
             },
-            "initialColorMode": "light",
             "letterSpacings": Object {
               "body": 0.1,
               "button": 2,
@@ -514,7 +512,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                 "heading": "starwars",
                 "monospace": "Menlo, monospace",
               },
-              "initialColorMode": "light",
               "letterSpacings": Object {
                 "body": 0.1,
                 "button": 2,
@@ -760,7 +757,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
                   "heading": "starwars",
                   "monospace": "Menlo, monospace",
                 },
-                "initialColorMode": "light",
                 "letterSpacings": Object {
                   "body": 0.1,
                   "button": 2,
@@ -1047,7 +1043,6 @@ exports[`EpisodeBanner Component should match snapshot 1`] = `
               "heading": "starwars",
               "monospace": "Menlo, monospace",
             },
-            "initialColorMode": "light",
             "letterSpacings": Object {
               "body": 0.1,
               "button": 2,
@@ -1263,7 +1258,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
           "heading": "starwars",
           "monospace": "Menlo, monospace",
         },
-        "initialColorMode": "light",
         "letterSpacings": Object {
           "body": 0.1,
           "button": 2,
@@ -1473,7 +1467,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
               "heading": "starwars",
               "monospace": "Menlo, monospace",
             },
-            "initialColorMode": "light",
             "letterSpacings": Object {
               "body": 0.1,
               "button": 2,
@@ -1687,7 +1680,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                 "heading": "starwars",
                 "monospace": "Menlo, monospace",
               },
-              "initialColorMode": "light",
               "letterSpacings": Object {
                 "body": 0.1,
                 "button": 2,
@@ -1932,7 +1924,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
                   "heading": "starwars",
                   "monospace": "Menlo, monospace",
                 },
-                "initialColorMode": "light",
                 "letterSpacings": Object {
                   "body": 0.1,
                   "button": 2,
@@ -2219,7 +2210,6 @@ exports[`EpisodeBanner Component smoke test 1`] = `
               "heading": "starwars",
               "monospace": "Menlo, monospace",
             },
-            "initialColorMode": "light",
             "letterSpacings": Object {
               "body": 0.1,
               "button": 2,

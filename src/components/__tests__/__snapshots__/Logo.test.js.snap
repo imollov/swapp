@@ -101,7 +101,6 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
           "heading": "starwars",
           "monospace": "Menlo, monospace",
         },
-        "initialColorMode": "light",
         "letterSpacings": Object {
           "body": 0.1,
           "button": 2,
@@ -402,7 +401,6 @@ exports[`Logo Component should match snapshot when clicked 1`] = `
               "heading": "starwars",
               "monospace": "Menlo, monospace",
             },
-            "initialColorMode": "light",
             "letterSpacings": Object {
               "body": 0.1,
               "button": 2,
@@ -618,7 +616,6 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
           "heading": "starwars",
           "monospace": "Menlo, monospace",
         },
-        "initialColorMode": "light",
         "letterSpacings": Object {
           "body": 0.1,
           "button": 2,
@@ -919,7 +916,6 @@ exports[`Logo Component should match snapshot when clicked 2`] = `
               "heading": "starwars",
               "monospace": "Menlo, monospace",
             },
-            "initialColorMode": "light",
             "letterSpacings": Object {
               "body": 0.1,
               "button": 2,
