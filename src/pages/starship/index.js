@@ -1,8 +1,9 @@
 import React from 'react'
 import { Tiles } from '@rebass/layout'
-import { Box, Heading } from 'rebass/styled-components'
+import { Flex, Box, Heading } from 'rebass/styled-components'
 
 import InfoCard from '../../components/InfoCard'
+import RadarChart from '../../components/RadarChart'
 import Divider from '../../components/Divider'
 import PageLayout from '../../components/PageLayout'
 
@@ -17,6 +18,27 @@ const {
     },
   },
 } = starshipsData
+
+const data = [
+  {
+    data: {
+      maxAtmSpeed: 0.9,
+      cost: 0.5,
+      maxMlh: 0.3,
+      hyperDRat: 0.45,
+      crew: 0.2,
+    },
+    meta: { color: 'red' },
+  },
+]
+
+const captions = {
+  maxAtmSpeed: 'Max Atm. Speed',
+  cost: 'Cost',
+  maxMlh: 'Max ML/h',
+  hyperDRat: 'HyperD Rat.',
+  crew: 'Crew',
+}
 
 export default () => {
   return (
@@ -40,7 +62,9 @@ export default () => {
           <Heading variant="h3" color="subHeading" textAlign="center" my={3}>
             Compared to Starship Class Max
           </Heading>
-          {/* Radar chart goes here... */}
+          <Flex bg="black" justifyContent="center" py={4}>
+            <RadarChart data={data} captions={captions} />
+          </Flex>
         </Box>
       </Tiles>
     </PageLayout>
