@@ -1,25 +1,16 @@
 import React from 'react'
+import { useQuery } from '@apollo/react-hooks'
+import { gql } from 'apollo-boost'
+import { useParams } from 'react-router-dom'
+
 import { Tiles } from '@rebass/layout'
 import { Flex, Box, Heading } from 'rebass/styled-components'
-
 import InfoCard from '../../components/InfoCard'
 import RadarChart from '../../components/RadarChart'
 import Divider from '../../components/Divider'
 import PageLayout from '../../components/PageLayout'
 
-import starshipsData from '../../stories/data/starships'
-
-const {
-  data: {
-    allStarships: {
-      edges: {
-        0: { node: starship },
-      },
-    },
-  },
-} = starshipsData
-
-const data = [
+const radarChartData = [
   {
     data: {
       maxAtmSpeed: 0.9,
@@ -40,7 +31,58 @@ const captions = {
   crew: 'Crew',
 }
 
+const STARSHIP_QUERY = gql`
+  query StarshipQuery($id: ID!) {
+    starship(id: $id) {
+      id
+      name
+      model
+      image
+      starshipClass
+      cost
+      maxAtmosphericSpeed
+      maxMLPerHour
+      hyperdriveRating
+      crew
+    }
+  }
+`
+
+// const ALL_STARSHIPS_QUERY = gql`
+//   query AllStarShipsQuery($first: Int!, $after: String, $filter: Filter) {
+//     allStarships(first: $first, after: $after, filter: $filter) {
+//       edges {
+//         node {
+//           cost
+//           maxAtmosphericSpeed
+//           maxMLPerHour
+//           hyperdriveRating
+//           crew
+//         }
+//       }
+//     }
+//   }
+// `
+
 export default () => {
+  const { starshipId } = useParams()
+  const { data, loading, error } = useQuery(STARSHIP_QUERY, {
+    variables: { id: starshipId },
+  })
+
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error on getting starship</p>
+
+  const { starship } = data
+
+  const stats = [
+    { field: 'Class', value: starship.starshipClass },
+    { field: 'Cost', value: starship.cost },
+    { field: 'Crew', value: starship.crew },
+    { field: 'Max Atmospheric Speed', value: starship.maxAtmosphericSpeed },
+    { field: 'Hyperdrive Rating', value: starship.hyperdriveRating },
+  ]
+
   return (
     <PageLayout variant="fitContent">
       <Heading variant="h1" textAlign="center">
@@ -52,18 +94,14 @@ export default () => {
       <Divider mb={4} />
       <Tiles columns={[1, 2, 2]} gap={4}>
         <Box>
-          <InfoCard
-            img={starship.image}
-            title={starship.name}
-            data={[{ field: 'foo', value: 'bar' }]}
-          />
+          <InfoCard img={starship.image} title={starship.name} data={stats} />
         </Box>
         <Box>
           <Heading variant="h3" color="subHeading" textAlign="center" my={3}>
             Compared to Starship Class Max
           </Heading>
           <Flex bg="black" justifyContent="center" py={4}>
-            <RadarChart data={data} captions={captions} />
+            <RadarChart data={radarChartData} captions={captions} />
           </Flex>
         </Box>
       </Tiles>
