@@ -1,5 +1,7 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
+import { useQuery } from '@apollo/react-hooks'
+import { gql } from 'apollo-boost'
 
 import LoginPage from './login'
 import EpisodesPage from './episodes'
@@ -8,10 +10,16 @@ import CharactersPage from './characters'
 import CharacterPage from './characters/pages/character'
 import StarshipPage from './starship'
 
-const isLoggedIn = true
+export const AUTHENTICATED_QUERY = gql`
+  query IsAuthenticated {
+    authenticated @client
+  }
+`
 
-const PrivateRoute = props =>
-  isLoggedIn ? <Route {...props} /> : <Redirect to="/login" />
+const PrivateRoute = props => {
+  const { data } = useQuery(AUTHENTICATED_QUERY)
+  return data.authenticated ? <Route {...props} /> : <Redirect to="/login" />
+}
 
 export default () => {
   return (
