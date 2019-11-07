@@ -5,31 +5,10 @@ import { useParams } from 'react-router-dom'
 
 import { Tiles } from '@rebass/layout'
 import { Flex, Box, Heading } from 'rebass/styled-components'
+import ComparisonChart from './components/ComparisonChart'
 import InfoCard from '../../components/InfoCard'
-import RadarChart from '../../components/RadarChart'
 import Divider from '../../components/Divider'
 import PageLayout from '../../components/PageLayout'
-
-const radarChartData = [
-  {
-    data: {
-      maxAtmSpeed: 0.9,
-      cost: 0.5,
-      maxMlh: 0.3,
-      hyperDRat: 0.45,
-      crew: 0.2,
-    },
-    meta: { color: 'red' },
-  },
-]
-
-const captions = {
-  maxAtmSpeed: 'Max Atm. Speed',
-  cost: 'Cost',
-  maxMlh: 'Max ML/h',
-  hyperDRat: 'HyperD Rat.',
-  crew: 'Crew',
-}
 
 const STARSHIP_QUERY = gql`
   query StarshipQuery($id: ID!) {
@@ -47,22 +26,6 @@ const STARSHIP_QUERY = gql`
     }
   }
 `
-
-// const ALL_STARSHIPS_QUERY = gql`
-//   query AllStarShipsQuery($first: Int!, $after: String, $filter: Filter) {
-//     allStarships(first: $first, after: $after, filter: $filter) {
-//       edges {
-//         node {
-//           cost
-//           maxAtmosphericSpeed
-//           maxMLPerHour
-//           hyperdriveRating
-//           crew
-//         }
-//       }
-//     }
-//   }
-// `
 
 export default () => {
   const { starshipId } = useParams()
@@ -101,7 +64,7 @@ export default () => {
             Compared to Starship Class Max
           </Heading>
           <Flex bg="black" justifyContent="center" py={4}>
-            <RadarChart data={radarChartData} captions={captions} />
+            <ComparisonChart starship={starship} />
           </Flex>
         </Box>
       </Tiles>
