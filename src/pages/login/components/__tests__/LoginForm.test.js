@@ -35,8 +35,10 @@ describe('LoginForm Component', () => {
     form.simulate('submit')
 
     expect(onSubmitMock).toHaveBeenCalledWith({
-      email: 'test',
-      password: '1234',
+      variables: {
+        email: 'test',
+        password: '1234',
+      },
     })
   })
 

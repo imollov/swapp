@@ -15,7 +15,7 @@ const LoginForm = ({ onSubmit, errorMsg, ...rest }) => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    onSubmit(state)
+    onSubmit({ variables: { ...state } })
   }
 
   return (
