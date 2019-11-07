@@ -1,4 +1,4 @@
-export default operation => {
+export const requestAuth = operation => {
   if (operation.operationName === 'signIn') return
   const token = localStorage.getItem('token')
   operation.setContext({
@@ -6,4 +6,14 @@ export default operation => {
       authorization: token ? `Bearer ${token}` : '',
     },
   })
+}
+
+export const authError = ({ graphQLErrors, networkError }) => {
+  if (graphQLErrors) {
+    graphQLErrors.forEach(e => {
+      if (e.extensions.code === 'FORBIDDEN') {
+        localStorage.removeItem('token')
+      }
+    })
+  }
 }
