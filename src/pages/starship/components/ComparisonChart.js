@@ -3,25 +3,13 @@ import { useQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 
 import RadarChart from '../../../components/RadarChart'
+import compareStarship from '../../../utils/compareStarship'
 
-const radarChartData = [
-  {
-    data: {
-      maxAtmSpeed: 0.9,
-      cost: 0.5,
-      maxMlh: 0.3,
-      hyperDRat: 0.45,
-      crew: 0.2,
-    },
-    meta: { color: 'red' },
-  },
-]
-
-const captions = {
-  maxAtmSpeed: 'Max Atm. Speed',
+const radarCaptions = {
+  maxAtmosphericSpeed: 'Max Atm. Speed',
   cost: 'Cost',
-  maxMlh: 'Max ML/h',
-  hyperDRat: 'HyperD Rat.',
+  maxMLPerHour: 'Max ML/h',
+  hyperdriveRating: 'HyperD Rat.',
   crew: 'Crew',
 }
 
@@ -35,10 +23,10 @@ const ALL_STARSHIPS_QUERY = gql`
       edges {
         node {
           cost
+          crew
           maxAtmosphericSpeed
           maxMLPerHour
           hyperdriveRating
-          crew
         }
       }
     }
@@ -53,9 +41,14 @@ export default ({ starship }) => {
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error on getting starship</p>
 
-  console.log(data)
+  const {
+    allStarships: { edges: relatedStarships },
+  } = data
 
-  // const { allStarships: { edges: relatedStarships }}
+  const chartData =
+    relatedStarships.length > 1
+      ? compareStarship(starship, relatedStarships)
+      : []
 
-  return <RadarChart data={radarChartData} captions={captions} />
+  return <RadarChart data={chartData} captions={radarCaptions} />
 }
