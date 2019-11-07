@@ -3,15 +3,9 @@
 exports[`LoginForm Component should match snapshot with error message 1`] = `
 <styled.div
   as="form"
+  errorMsg="error"
   onSubmit={[Function]}
 >
-  <styled.div>
-    <ForwardRef
-      variant="error"
-    >
-      error
-    </ForwardRef>
-  </styled.div>
   <styled.div
     my={3}
   >

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import { Box, Button, Text } from 'rebass/styled-components'
+import { Box, Button } from 'rebass/styled-components'
 import StyledInput from './StyledInput'
 
-const LoginForm = ({ onSubmit, errorMsg, ...rest }) => {
+const LoginForm = ({ onSubmit, ...rest }) => {
   const [state, setState] = useState({
     email: '',
     password: '',
@@ -20,11 +20,6 @@ const LoginForm = ({ onSubmit, errorMsg, ...rest }) => {
 
   return (
     <Box {...rest} as="form" onSubmit={handleSubmit}>
-      {errorMsg && (
-        <Box>
-          <Text variant="error">{errorMsg}</Text>
-        </Box>
-      )}
       <Box my={3}>
         <StyledInput
           id="email"

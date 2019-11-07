@@ -3,7 +3,7 @@ import { useApolloClient, useMutation } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 import { Redirect } from 'react-router-dom'
 
-import { Flex, Box } from 'rebass/styled-components'
+import { Flex, Box, Text } from 'rebass/styled-components'
 
 import LoginForm from './components/LoginForm'
 import Logo from '../../components/Logo'
@@ -19,9 +19,9 @@ const SIGN_IN = gql`
 export default () => {
   const client = useApolloClient()
   const [redirect, setRedirect] = useState(false)
-  const [errorMsg, setErrorMsg] = useState()
+  const [errorMsg, setErrorMsg] = useState('')
 
-  const [signIn, { loading }] = useMutation(SIGN_IN, {
+  const [signIn] = useMutation(SIGN_IN, {
     onCompleted: ({ signIn: { token } }) => {
       localStorage.setItem('token', token)
       client.writeData({ data: { authenticated: true } })
@@ -41,11 +41,12 @@ export default () => {
           <Logo variant="logo.large" />
         </Box>
         <Box variant="card" p={4} px={[4, null, 5]}>
-          {loading ? (
-            <p>Loadning...</p>
-          ) : (
-            <LoginForm onSubmit={signIn} errorMsg={errorMsg} />
+          {errorMsg && (
+            <Box>
+              <Text variant="error">{errorMsg}</Text>
+            </Box>
           )}
+          <LoginForm onSubmit={signIn} />
         </Box>
       </Box>
     </Flex>
