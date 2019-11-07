@@ -1,34 +1,57 @@
 import React from 'react'
+import { useQuery } from '@apollo/react-hooks'
+import { gql } from 'apollo-boost'
+import { useParams } from 'react-router-dom'
+
 import { Tiles } from '@rebass/layout'
 import { Box, Heading } from 'rebass/styled-components'
-
 import InfoCard from '../../../../components/InfoCard'
 import ImageCard from '../../../../components/ImageCard'
-import ResponsiveList from '../../../../components/ResponsiveList'
 import Divider from '../../../../components/Divider'
 import PageLayout from '../../../../components/PageLayout'
 
-import personsData from '../../../../stories/data/persons'
-import starshipsData from '../../../../stories/data/starships'
-
-const {
-  data: {
-    allPeople: {
-      edges: {
-        1: { node: character },
-      },
-    },
-  },
-} = personsData
-
-const {
-  data: {
-    allStarships: { edges },
-  },
-} = starshipsData
-const starships = edges.slice(0, 4)
+const CHARACTER_QUERY = gql`
+  query CharacterQuery($id: ID!, $first: Int!, $after: String) {
+    person(id: $id) {
+      id
+      name
+      birthYear
+      height
+      mass
+      image
+      homeworld {
+        name
+      }
+      species {
+        name
+      }
+      starships(first: $first, after: $after) {
+        edges {
+          node {
+            id
+            name
+            image
+          }
+        }
+      }
+    }
+  }
+`
 
 export default () => {
+  const { characterId } = useParams()
+  const { data, loading, error } = useQuery(CHARACTER_QUERY, {
+    variables: { id: characterId, first: 5 },
+  })
+
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error on getting episodes</p>
+
+  const { person: character } = data
+  const {
+    starships: { edges: characterStarships },
+  } = character
+
   const characterDetails = [
     { field: 'Height', value: character.height },
     { field: 'Weight', value: character.mass },
@@ -54,8 +77,8 @@ export default () => {
             Piloted Starships
           </Heading>
           <Divider mb={3} />
-          <ResponsiveList columns={1}>
-            {starships.map(({ node: s }) => (
+          <Tiles columns={1}>
+            {characterStarships.map(({ node: s }) => (
               <ImageCard
                 key={s.id}
                 img={s.image}
@@ -65,7 +88,7 @@ export default () => {
                 minHeight={60}
               />
             ))}
-          </ResponsiveList>
+          </Tiles>
         </Box>
       </Tiles>
     </PageLayout>
