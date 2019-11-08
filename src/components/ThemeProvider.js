@@ -1,22 +1,20 @@
-import React, { useState, createContext } from 'react'
-import merge from 'lodash.merge'
-import get from 'lodash.get'
-import baseTheme from '../theme'
+import React, { createContext, useState, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './GlobalStyles'
+import getTheme from '../utils/getTheme'
 
-const modes = ['light', 'dark']
+const defaultTheme = 'light'
 
-const getTheme = mode =>
-  merge({}, baseTheme, {
-    colors: get(baseTheme.colors.modes, mode, baseTheme.colors),
-  })
-
-export const ThemeContext = createContext(modes[0])
+export const ThemeContext = createContext(defaultTheme)
 
 export default props => {
-  const [mode, setMode] = useState(modes[0])
+  const localTheme = localStorage.getItem('theme')
+  const [mode, setMode] = useState(localTheme)
   const theme = getTheme(mode)
+
+  useEffect(() => {
+    localStorage.setItem('theme', mode)
+  })
 
   const toggleMode = () => setMode(mode === 'light' ? 'dark' : 'light')
 
