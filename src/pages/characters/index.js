@@ -1,11 +1,7 @@
 import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
-
-import { Box, Button } from 'rebass/styled-components'
-import { Tiles } from '@rebass/layout/styled-components'
-import ImageCard from '../../components/ImageCard'
-import PageLayout from '../../components/PageLayout'
+import Page from './components/Page'
 
 const CHARACTERS_QUERY = gql`
   query AllCharactersQuery($first: Int!, $after: String) {
@@ -35,7 +31,7 @@ export default () => {
 
   const {
     allPeople: {
-      edges: characters,
+      edges: allCharacters,
       pageInfo: { endCursor, hasNextPage },
     },
   } = data
@@ -61,25 +57,10 @@ export default () => {
   }
 
   return (
-    <PageLayout>
-      <Tiles columns={[1, null, 3]}>
-        {characters.map(({ node: p }) => (
-          <ImageCard
-            key={p.id}
-            img={p.image}
-            title={p.name}
-            linkTo={`/character/${p.id}`}
-            minHeight={100}
-          />
-        ))}
-      </Tiles>
-      {hasNextPage && (
-        <Box py={3} textAlign="center">
-          <Button variant="secondary" onClick={loadMoreCharacters}>
-            Load More
-          </Button>
-        </Box>
-      )}
-    </PageLayout>
+    <Page
+      characters={allCharacters}
+      loadMore={loadMoreCharacters}
+      hasMore={hasNextPage}
+    />
   )
 }
