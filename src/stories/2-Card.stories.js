@@ -33,6 +33,7 @@ export const Preview = () => {
           title={episode1.title}
           text={episode1.openingCrawl}
           img={episode1.image}
+          linkTo={'/'}
           maxWidth={256}
           m="auto"
         />
