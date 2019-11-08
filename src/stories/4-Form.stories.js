@@ -1,5 +1,4 @@
 import React from 'react'
-import { text } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { Box } from 'rebass/styled-components'
 import ThemeProvider from '../components/ThemeProvider'
@@ -12,16 +11,11 @@ export default {
 }
 
 export const Login = () => {
-  const errorMessage = text('Error message')
-
   return (
     <ThemeProvider>
       <ThemedBox maxWidth={580}>
         <Box variant="card" p={4}>
-          <LoginForm
-            errorMsg={errorMessage}
-            onSubmit={formData => action('submitted')(formData)}
-          />
+          <LoginForm onSubmit={formData => action('submitted')(formData)} />
         </Box>
       </ThemedBox>
     </ThemeProvider>
