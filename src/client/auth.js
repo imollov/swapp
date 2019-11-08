@@ -13,7 +13,6 @@ export const authError = ({ graphQLErrors }) => {
     graphQLErrors.forEach(({ extensions: { code } }) => {
       if (code === 'FORBIDDEN' || code === 'UNAUTHENTICATED') {
         localStorage.removeItem('token')
-        window.location.replace('/login')
       }
     })
   }
