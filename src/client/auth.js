@@ -8,11 +8,12 @@ export const requestAuth = operation => {
   })
 }
 
-export const authError = ({ graphQLErrors, networkError }) => {
+export const authError = ({ graphQLErrors }) => {
   if (graphQLErrors) {
-    graphQLErrors.forEach(e => {
-      if (e.extensions.code === 'FORBIDDEN') {
+    graphQLErrors.forEach(({ extensions: { code } }) => {
+      if (code === 'FORBIDDEN' || code === 'UNAUTHENTICATED') {
         localStorage.removeItem('token')
+        window.location.replace('/login')
       }
     })
   }
