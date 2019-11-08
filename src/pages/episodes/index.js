@@ -2,6 +2,7 @@ import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 import Page from './components/Page'
+import Loading from '../../components/Loading'
 
 const EPISODES_QUERY = gql`
   query AllEpisodesQuery($first: Int!) {
@@ -25,7 +26,7 @@ export default () => {
     variables: { first: 10 },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <Loading />
   if (error) return <p>Error on getting episodes</p>
 
   const {

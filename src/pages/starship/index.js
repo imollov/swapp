@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 import { useParams } from 'react-router-dom'
 import Page from './components/Page'
+import Loading from '../../components/Loading'
 
 const STARSHIP_QUERY = gql`
   query StarshipQuery($id: ID!) {
@@ -27,7 +28,7 @@ export default () => {
     variables: { id: starshipId },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <Loading />
   if (error) return <p>Error on getting starship</p>
 
   const { starship } = data
