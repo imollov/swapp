@@ -4,7 +4,7 @@ import { Box } from 'rebass/styled-components'
 import ThemeProvider from '../components/ThemeProvider'
 import ThemedBox from './common/ThemedBox'
 
-import AppBar from '../components/AppBar'
+import AppBar from '../components/AppBar/AppBar'
 import Divider from '../components/Divider'
 
 export default {

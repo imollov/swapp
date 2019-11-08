@@ -17,7 +17,7 @@ export const Login = () => {
   return (
     <ThemeProvider>
       <ThemedBox maxWidth={580}>
-        <Box variant="card">
+        <Box variant="card" p={4}>
           <LoginForm
             errorMsg={errorMessage}
             onSubmit={formData => action('submitted')(formData)}
