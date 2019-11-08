@@ -2,11 +2,7 @@ import React, { useState } from 'react'
 import { useApolloClient, useMutation } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 import { Redirect } from 'react-router-dom'
-
-import { Flex, Box, Text } from 'rebass/styled-components'
-
-import LoginForm from './components/LoginForm'
-import Logo from '../../components/Logo'
+import Page from './components/Page'
 
 const SIGN_IN = gql`
   mutation signIn($email: String!, $password: String!) {
@@ -34,21 +30,5 @@ export default () => {
 
   if (redirect) return <Redirect to="/" />
 
-  return (
-    <Flex variant="content" justifyContent="center">
-      <Box p={2} mt={5} bg="black" width={600}>
-        <Box textAlign="center">
-          <Logo variant="logo.large" />
-        </Box>
-        <Box variant="card" p={4} px={[4, null, 5]}>
-          {errorMsg && (
-            <Box>
-              <Text variant="error">{errorMsg}</Text>
-            </Box>
-          )}
-          <LoginForm onSubmit={signIn} />
-        </Box>
-      </Box>
-    </Flex>
-  )
+  return <Page signIn={signIn} errorMsg={errorMsg} />
 }
