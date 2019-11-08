@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 import { useParams } from 'react-router-dom'
 import Page from './components/Page'
+import Loading from '../../../../components/Loading'
 
 const EPISODE_QUERY = gql`
   query EpisodeQuery($id: ID!, $first: Int!, $after: String) {
@@ -37,7 +38,7 @@ export default () => {
     variables: { id: episodeId, first: 5 },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <Loading />
   if (error) return <p>Error on getting episodes</p>
 
   const { episode } = data

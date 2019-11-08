@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 
 import RadarChart from '../../../components/RadarChart'
+import Loading from '../../../components/Loading'
 import compareStarship from '../../../utils/compareStarship'
 
 const radarCaptions = {
@@ -38,7 +39,7 @@ export default ({ starship }) => {
     variables: { first: 10, filter: { starshipClass: starship.starshipClass } },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <Loading size={40} />
   if (error) return <p>Error on getting starship</p>
 
   const {

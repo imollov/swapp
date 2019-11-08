@@ -2,6 +2,7 @@ import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 import Page from './components/Page'
+import Loading from '../../components/Loading'
 
 const CHARACTERS_QUERY = gql`
   query AllCharactersQuery($first: Int!, $after: String) {
@@ -26,7 +27,7 @@ export default () => {
     variables: { first: 12 },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <Loading />
   if (error) return <p>Error on getting characters</p>
 
   const {
