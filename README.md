@@ -4,4 +4,5 @@
 
 Course project for React Web Apps Masterclass @SoftUniBG
 
-[Demo](https://swapp-demo.netlify.com) | [Storybook](https://5dc5be427fc02b0008e41efb--swapp-demo.netlify.com/)
+* [Demo](https://swapp-demo.netlify.com) *(user: demo@st6.io, pass: demo1234)*
+* [Storybook](https://5dc5be427fc02b0008e41efb--swapp-demo.netlify.com/)
